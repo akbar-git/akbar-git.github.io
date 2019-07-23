@@ -163,7 +163,13 @@ p {
 #navigation.modern.white-nav .columns .nav-menu ul.dropdown-menu li a {
     color: #4a4a4a !important;
 }
-
+#navigation.modern .columns ul li a, 
+#navigation.modern .columns ul li button {
+    font-size: 18px;
+}
+#navigation.modern .columns .nav-menu ul.dropdown-menu li a {
+    font-size: 14px;
+}
 /* Titles */
 h2.title {
     padding: 0;
