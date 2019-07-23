@@ -1590,7 +1590,7 @@ $(window).on('load', function() {
 
 // VIS CHARTS
  // Net Chart
- $(document).ready(function() {
+ $(window).on('load', function() {
  var DIR = '../images/vis_charts/';
     nodes = [
     {id: 1,  shape: 'circularImage', image: DIR + 'main.png', label:"S-C-E-T-A"},
@@ -1684,9 +1684,10 @@ $(window).on('load', function() {
 
     // initialize your network!
     var network = new vis.Network(container, data, options);
-    setTimeout(function(){
+    // setTimeout(function(){
         network.fit(50);
-    }, 500);
+    // }, 500);
     
 
 });
+
