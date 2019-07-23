@@ -229,6 +229,9 @@ h3.title {
 #services .qdr-callout {
     font-size: 1.1rem;
 }
+#services .vis-chart-fivekey {
+    background-color: #000;
+}
 /* Home Slider */
 .rev_slider li.tp-revslider-slidesli, .tp-bgimg.defaultimg  {
     background-image: unset !important;
