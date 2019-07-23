@@ -17,7 +17,7 @@
                 sliderType:"standard",
                 jsFileLocation:"js/revolutionslider/",
                 sliderLayout:"fullscreen",
-                delay:9000,
+                delay:3000,
                 navigation: {
                 keyboardNavigation: "on",
                 keyboard_direction: "horizontal",

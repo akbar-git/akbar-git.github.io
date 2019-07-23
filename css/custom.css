@@ -45,12 +45,46 @@
 /* Full Screen Video : End */
 
 /* COMMON CHANGES : START */
-.bg-colored, .bg-colored-hover:hover, .qdr-hover:before {
+.border-colored, .border-colored-hover:hover {
+    border-color: #FF001C !important;
+}
+.bg-colored, .bg-colored-hover:hover, .qdr-hover:before, 
+.features-boxes .item .icon:hover, .features-boxes .item:hover .icon,
+.qdr-hover-5:before {
     background-color: #FF001C !important;
 }
 #navigation.modern .columns ul li a:hover, 
 #navigation.modern .columns ul li.active > a {
     color: #FF001C !important;
+}
+.gray6, .gray6-hover:hover, 
+.image-boxes .item p, 
+p.description,
+.features-boxes .item .texts p {
+    color: #666 !important;
+}
+.selet-list {
+    width: 100%;
+    padding: 10px;
+    height: 55px;
+    text-transform: uppercase;
+    color: #8c8c8c;
+}
+.selet-list option:first-child {
+    color: #8c8c8c;
+}
+.select-in-row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.select-in-row .col-left {
+    padding-right: 10px;
+}
+.select-in-row .col-right {
+    padding-left: 10px;
+}
+.select-in-row select, .select-in-row input {
+    margin: 0 !important;
 }
 /* COMMON CHANGES : END */
 
@@ -128,6 +162,14 @@ h2.title {
     text-transform: uppercase;
 }
 
+h3.title {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    color: #717171;
+    text-transform: uppercase;
+}
+
 /* Boxes */
 .red-bg-circle-icon .border-colored1, .red-bg-circle-icon .border-colored1-hover:hover {
     border-color: #FF001C !important;
@@ -165,6 +207,10 @@ h2.title {
 #rotateboxes.about-section-1 .box-details h5
 {
     text-shadow: 1px 1px 2px #000, 1px 1px 2px #000,1px 1px 2px #000, 1px 1px 2px #000, 1px 1px 2px #000, 1px 1px 2px #000, 1px 1px 2px #000;
+}
+#rotateboxes.about-section-1 .back p {
+    font-size: 1.2rem;
+    text-align: left
 }
 .bg-colored2, .bg-colored2-hover:hover {
     background-color: rgba(0,0,0,0.8) !important;
