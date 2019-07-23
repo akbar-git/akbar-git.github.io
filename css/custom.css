@@ -90,7 +90,7 @@ p a {
     text-decoration: underline;
 }
 p {
-    font-size: 15px;
+    font-size: 16px !important;
     font-family: 'Roboto Condensed', sans-serif;
 }
 .lg-btn {
@@ -225,6 +225,9 @@ h3.title {
 }
 #safe_comliant_accessed .slick-list {
     overflow: unset !important;
+}
+#services .qdr-callout {
+    font-size: 1.1rem;
 }
 /* Home Slider */
 .rev_slider li.tp-revslider-slidesli, .tp-bgimg.defaultimg  {
