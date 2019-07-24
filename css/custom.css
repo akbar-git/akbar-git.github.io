@@ -166,7 +166,7 @@ p {
 #navigation.modern .columns ul li.active > a {
     color: #fff !important;
     opacity: unset !important;
-    text-shadow: 0px 0px 20px #000, 0px 0px 20px #000;
+    text-shadow: 0px 0px 20px #630000, 0px 0px 20px #d00707;
 }
 #navigation.modern.white-nav.start-dark .columns ul.dropdown-menu li a, 
 #navigation.modern.white-nav .columns .nav-menu ul.dropdown-menu li a {
