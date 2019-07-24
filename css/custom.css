@@ -175,6 +175,12 @@ p {
 #navigation.modern.white-nav .columns .nav-menu ul.dropdown-menu li a {
     color: #4a4a4a !important;
 }
+#navigation.modern.white-nav.start-dark .columns ul.dropdown-menu li a:hover, 
+#navigation.modern.white-nav .columns .nav-menu ul.dropdown-menu li a:hover {
+    color: #999 !important;
+    text-shadow: unset;
+}
+
 #navigation.modern .columns ul li a, 
 #navigation.modern .columns ul li button {
     font-size: 16px;

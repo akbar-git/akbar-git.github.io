@@ -677,10 +677,10 @@ $(window).on('load', function() {
         }
         var $desktopLogo = $('#navigation .logo img').attr('src');
         $.fn.changeMobileLogo = function() {
-            if ($(window).width() < 1120) {
-                var $mobileLogo = $('#navigation .logo img').attr('data-mobile-logo');
-                if (typeof $mobileLogo !== typeof undefined && $mobileLogo !== false) {$("#navigation .logo img").attr("src", $mobileLogo);}
-            } else{ $("#navigation .logo img").attr("src", $desktopLogo); }
+            // if ($(window).width() < 1120) {
+            //     var $mobileLogo = $('#navigation .logo img').attr('data-mobile-logo');
+            //     if (typeof $mobileLogo !== typeof undefined && $mobileLogo !== false) {$("#navigation .logo img").attr("src", $mobileLogo);}
+            // } else{ $("#navigation .logo img").attr("src", $desktopLogo); }
         }
         $(window).changeMobileLogo();
         //Close Mobile Navigation
