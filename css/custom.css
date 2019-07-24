@@ -159,12 +159,14 @@ p {
 
 }
 #navigation.modern.white-nav .columns a {
-    color: #e2e2e2 !important;
+    color: #fff !important;
+    letter-spacing: 0.02rem;
 }
 #navigation.modern .columns ul li a:hover, 
 #navigation.modern .columns ul li.active > a {
     color: #fff !important;
     opacity: unset !important;
+    text-shadow: 0px 0px 20px #000, 0px 0px 20px #000;
 }
 #navigation.modern.white-nav.start-dark .columns ul.dropdown-menu li a, 
 #navigation.modern.white-nav .columns .nav-menu ul.dropdown-menu li a {
@@ -176,6 +178,9 @@ p {
 }
 #navigation.modern .columns .nav-menu ul.dropdown-menu li a {
     font-size: 15px;
+}
+#navigation.modern .columns ul.dropdown-menu {
+    min-width: 250px;
 }
 /* Titles */
 h2.title {
