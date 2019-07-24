@@ -61,7 +61,7 @@
 .image-boxes .item p, 
 p.description,
 .features-boxes .item .texts p {
-    color: #666 !important;
+    color: #333 !important;
 }
 .selet-list {
     width: 100%;
@@ -86,12 +86,19 @@ p.description,
 .select-in-row select, .select-in-row input {
     margin: 0 !important;
 }
-p a {
+h1.title {
+    font-size: 46px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: unset !important;
+}
+p a:not(.no-underline) {
     text-decoration: underline;
 }
 p {
-    font-size: 16px !important;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 .lg-btn {
     text-transform: uppercase;
@@ -174,26 +181,61 @@ p {
 h2.title {
     padding: 0;
     margin: 0;
-    font-size: 45px;
+    font-size: 40px;
     color: #717171;
-    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: unset !important;
 }
 
 h3.title {
     padding: 0;
     margin: 0;
-    font-size: 40px;
+    font-size: 29px;
     color: #717171;
-    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: unset !important;
+}
+
+h4.title {
+    padding: 0;
+    margin: 0;
+    font-size: 23px;
+    color: #717171;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: unset !important;
+}
+
+.image-boxes .item h3, #services .inner h3, .features-boxes .item .texts h3 {
+    text-transform: unset;
+    font-size: 18px !important;
+    color: #333 !important;
+    font-weight: 500;
+}
+
+.rev_slider .caption.x-large, .rev_slider .tp-caption.x-large {
+    font-size: 3.2rem !important;
+    font-weight: 800 !important;
+}
+
+.rev_slider .tp-caption.md {
+    font-size: 1.6rem !important;
+    font-weight: 600 !important;
+}
+
+.montserrat, .antonio {
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Boxes */
 .red-bg-circle-icon .border-colored1, .red-bg-circle-icon .border-colored1-hover:hover {
-    border-color: #FF001C !important;
-    background-color: #FF001C !important;
+    border-color: #d40118 !important;
+    background-color: #d40118 !important;
 }
-#intro_section_2 .slick-list .item p {
-    text-align: justify;
+
+.feature-box-row {
+    width: 100%;
 }
 
 #diminish_manual .rotate-box {
@@ -213,14 +255,21 @@ h3.title {
     background-size: cover;
 }
 #rotateboxes.about-section-1 .box-details h4 {
-    font-size: 24px;
     letter-spacing: unset;
     text-transform: uppercase;
+    margin-top: 85px;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 #rotateboxes.about-section-1 .box-details h4, 
 #rotateboxes.about-section-1 .box-details h5
 {
-    text-shadow: 1px 1px 2px #000, 1px 1px 2px #000,1px 1px 2px #000, 1px 1px 2px #000, 1px 1px 2px #000, 1px 1px 2px #000, 1px 1px 2px #000;
+    text-shadow: 
+    1px 1px 2px #000, 1px 1px 2px #000, 1px 1px 2px #000, 
+    1px 1px 2px #000, 1px 1px 2px #000, 1px 1px 2px #000, 
+    1px 1px 2px #000,1px 1px 2px #000, 1px 1px 2px #000, 
+    1px 1px 2px #000, 1px 1px 2px #000, 1px 1px 2px #000, 
+    1px 1px 10px #000, 1px 1px 10px #000, 1px 1px 10px #000;
 }
 #rotateboxes.about-section-1 .back p {
     font-size: 1.2rem;
