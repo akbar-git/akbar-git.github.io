@@ -87,7 +87,7 @@ p.description,
     margin: 0 !important;
 }
 h1.title {
-    font-size: 46px;
+    font-size: 35px;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     text-transform: unset !important;
@@ -103,6 +103,9 @@ p {
 .lg-btn {
     text-transform: uppercase;
     letter-spacing: .04rem;
+}
+.qdr-hover-3 span.qdr-details {
+    line-height: 3.5;
 }
 /* COMMON CHANGES : END */
 
@@ -234,7 +237,7 @@ h4.title {
 }
 
 /* Boxes */
-.red-bg-circle-icon .border-colored1, .red-bg-circle-icon .border-colored1-hover:hover {
+.red-bg-circle-icon .border-colored1, .red-bg-circle-icon .border-colored1-hover:hover, .bgcolor-md-red {
     border-color: #d40118 !important;
     background-color: #d40118 !important;
 }
