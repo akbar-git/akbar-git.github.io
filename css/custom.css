@@ -46,16 +46,16 @@
 
 /* COMMON CHANGES : START */
 .border-colored, .border-colored-hover:hover {
-    border-color: #FF001C !important;
+    border-color: #d40118 !important;
 }
 .bg-colored, .bg-colored-hover:hover, .qdr-hover:before, 
 .features-boxes .item .icon:hover, .features-boxes .item:hover .icon,
 .qdr-hover-5:before {
-    background-color: #FF001C !important;
+    background-color: #d40118 !important;
 }
 #navigation.modern .columns ul li a:hover, 
 #navigation.modern .columns ul li.active > a {
-    color: #FF001C !important;
+    color: #d40118 !important;
 }
 .gray6, .gray6-hover:hover, 
 .image-boxes .item p, 
