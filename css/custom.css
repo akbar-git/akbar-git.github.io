@@ -334,3 +334,10 @@ h5.title.bottomline {
     margin-bottom: 5px;
 }
 /* WHY TXT : END */
+
+/* PRICING : START */
+#device_prices h2 {
+    display: inline-block;
+}
+
+/* PRICING : END */
