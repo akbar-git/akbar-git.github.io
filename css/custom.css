@@ -60,7 +60,7 @@
 .gray6, .gray6-hover:hover, 
 .image-boxes .item p, 
 p.description,
-.features-boxes .item .texts p {
+.features-boxes .item .texts p, .gray-dark-p {
     color: #333 !important;
 }
 .selet-list {
@@ -115,8 +115,8 @@ p {
 /* Logo */
 #navigation.modern .columns .logo a, 
 #navigation.modern .columns .logo img {
-    max-height: 65px;
-    margin-top: 10px;
+    max-height: 90px;
+    margin-top: 20px;
 }
 #navigation.modern.scrolled .columns .logo a, 
 #navigation.modern.scrolled .columns .logo img {
@@ -169,14 +169,16 @@ p {
 #navigation.modern .columns ul li.active > a {
     color: #fff !important;
     opacity: unset !important;
-    text-shadow: 0px 0px 20px #630000, 0px 0px 20px #d00707;
+    text-shadow: 0px 0px 20px #630000;
+    /* text-shadow: 0px 0px 20px #630000, 0px 0px 20px #d00707; */
 }
 #navigation.modern.white-nav.start-dark .columns ul.dropdown-menu li a, 
 #navigation.modern.white-nav .columns .nav-menu ul.dropdown-menu li a {
     color: #4a4a4a !important;
 }
 #navigation.modern.white-nav.start-dark .columns ul.dropdown-menu li a:hover, 
-#navigation.modern.white-nav .columns .nav-menu ul.dropdown-menu li a:hover {
+#navigation.modern.white-nav .columns .nav-menu ul.dropdown-menu li a:hover,
+#navigation.modern.white-nav .columns .nav-menu ul.dropdown-menu li.active a {
     color: #999 !important;
     text-shadow: unset;
 }
@@ -221,11 +223,29 @@ h4.title {
     text-transform: unset !important;
 }
 
-.image-boxes .item h3, #services .inner h3, .features-boxes .item .texts h3 {
+h5.title {
+    padding: 0;
+    margin: 0;
+    font-size: 22px;
+    color: #717171;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: unset !important;
+}
+
+h5.title.bottomline {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+}
+
+.image-boxes .item h3, #services .inner h3, .features-boxes .item .texts h3, .grid-text-boxes h3 {
     text-transform: unset;
     font-size: 18px !important;
     color: #333 !important;
     font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .rev_slider .caption.x-large, .rev_slider .tp-caption.x-large {
@@ -307,3 +327,9 @@ h4.title {
     background-size: 0px 0px !important;
 }
 /* HOME PAGE : END */
+
+/* WHY TXT : START */
+.divice-capability ul.list-icons li {
+    margin-bottom: 5px;
+}
+/* WHY TXT : END */

@@ -1590,39 +1590,39 @@ $(window).on('load', function() {
 
 // VIS CHARTS
  // Net Chart
- $(window).on('load', function() {
- var DIR = '../images/vis_charts/';
-    nodes = [
-    {id: 1,  shape: 'circularImage', image: DIR + 'main.png', label:"S-C-E-T-A"},
-    {id: 2,  shape: 'circularImage', image: DIR + '21.png', label:"SAFETY", group: 'safteymain'},
-    {id: 3,  shape: 'circularImage', image: DIR + '31.png', label:"Driver Behaviour Monitoring", group: 'safety'},
-    {id: 4,  shape: 'circularImage', image: DIR + '41.png', label:"Accident Detection", group: 'safety'},
-    {id: 5,  shape: 'circularImage', image: DIR + '51.png', label:"Cloud Based Dashcam", group: 'safety'},
-    {id: 6,  shape: 'circularImage', image: DIR + '61.png', label:"Driver Scorecard", group: 'safety'},
-    {id: 7,  shape: 'circularImage', image: DIR + '71.png', label:"ASSET", group: 'assetmain'},
-    {id: 8,  shape: 'circularImage', image: DIR + '81.png', label:"Lower Maintenance Cost", group: 'asset'},
-    {id: 9,  shape: 'circularImage', image: DIR + '91.png', label:"Reduce Downtime", group: 'asset'},
-    {id: 10, shape: 'circularImage', image: DIR + '101.png', label:"Predictive Maintenance", group: 'asset'},
+//  $(window).on('load', function() {
+//  var DIR = '../images/vis_charts/';
+//     nodes = [
+//     {id: 1,  shape: 'circularImage', image: DIR + 'main.png', label:"S-C-E-T-A"},
+//     {id: 2,  shape: 'circularImage', image: DIR + '21.png', label:"SAFETY", group: 'safteymain'},
+//     {id: 3,  shape: 'circularImage', image: DIR + '31.png', label:"Driver Behaviour Monitoring", group: 'safety'},
+//     {id: 4,  shape: 'circularImage', image: DIR + '41.png', label:"Accident Detection", group: 'safety'},
+//     {id: 5,  shape: 'circularImage', image: DIR + '51.png', label:"Cloud Based Dashcam", group: 'safety'},
+//     {id: 6,  shape: 'circularImage', image: DIR + '61.png', label:"Driver Scorecard", group: 'safety'},
+//     {id: 7,  shape: 'circularImage', image: DIR + '71.png', label:"ASSET", group: 'assetmain'},
+//     {id: 8,  shape: 'circularImage', image: DIR + '81.png', label:"Lower Maintenance Cost", group: 'asset'},
+//     {id: 9,  shape: 'circularImage', image: DIR + '91.png', label:"Reduce Downtime", group: 'asset'},
+//     {id: 10, shape: 'circularImage', image: DIR + '101.png', label:"Predictive Maintenance", group: 'asset'},
     // {id: 11, shape: 'circularImage', image: DIR + '11.png'},
     // {id: 12, shape: 'circularImage', image: DIR + '12.png'},
     // {id: 13, shape: 'circularImage', image: DIR + '13.png'},
     // {id: 14, shape: 'circularImage', image: DIR + '14.png'},
     // {id: 15, shape: 'circularImage', image: DIR + 'missing.png', brokenImage: DIR + 'missingBrokenImage.png', label:"when images\nfail\nto load"},
     // {id: 16, shape: 'circularImage', image: DIR + 'anotherMissing.png', brokenImage: DIR + '9.png', label:"fallback image in action"}
-    ];
+    // ];
 
     // create connections between people
     // value corresponds with the amount of contact between two people
-    edges = [
-    {from: 1, to: 2},
-    {from: 2, to: 3},
-    {from: 2, to: 4},
-    {from: 2, to: 5},
-    {from: 2, to: 6},
-    {from: 1, to: 7},
-    {from: 7, to: 8},
-    {from: 7, to: 9},
-    {from: 7, to: 10},
+    // edges = [
+    // {from: 1, to: 2},
+    // {from: 2, to: 3},
+    // {from: 2, to: 4},
+    // {from: 2, to: 5},
+    // {from: 2, to: 6},
+    // {from: 1, to: 7},
+    // {from: 7, to: 8},
+    // {from: 7, to: 9},
+    // {from: 7, to: 10},
     // {from: 8, to: 9},
     // {from: 8, to: 10},
     // {from: 10, to: 11},
@@ -1630,64 +1630,64 @@ $(window).on('load', function() {
     // {from: 12, to: 13},
     // {from: 13, to: 14},
     // {from: 9, to: 16}
-    ];
+    // ];
 
     // create a network
-    var container = document.getElementById('vis_chart_fivekey');
+    // var container = document.getElementById('vis_chart_fivekey');
 
     // provide the data in the vis format
-    var data = {
-        nodes: nodes,
-        edges: edges
-    };
-    var options = {
-        locale: 'en',
-        clustering: true,
-        physics: {
-            "enabled": true
-        },
-        autoResize: true,
-        nodes: {
-            borderWidth: 4,
-            size: 40,
-            color: {
-              border: '#FF001C',
-              background: '#fff'
-            },
-            font:{color:'#eeeeee'}
-          },
-          edges: {
-            color: 'lightgray'
-          },
-          groups: {
-            safety: {
-                size: 5,
-                color: {background:'#094ce8', border:'#094ce8'}
-            },
-            asset: {
-                size: 5,
-                color: {background:'#f5ae63', border:'#f5ae63'},
-                borderWidth: 1
-            },
-            safteymain: {
-                size: 10,
-                color: {background:'#094ce8', border:'#094ce8'},
-                borderWidth: 1
-            },
-            assetmain: {
-                size: 10,
-                color: {background:'#f5ae63', border:'#f5ae63'},
-                borderWidth: 1
-            }
-        }
-    };
+    // var data = {
+    //     nodes: nodes,
+    //     edges: edges
+    // };
+    // var options = {
+    //     locale: 'en',
+    //     clustering: true,
+    //     physics: {
+    //         "enabled": true
+    //     },
+    //     autoResize: true,
+    //     nodes: {
+    //         borderWidth: 4,
+    //         size: 40,
+    //         color: {
+    //           border: '#FF001C',
+    //           background: '#fff'
+    //         },
+    //         font:{color:'#eeeeee'}
+    //       },
+    //       edges: {
+    //         color: 'lightgray'
+    //       },
+    //       groups: {
+    //         safety: {
+    //             size: 5,
+    //             color: {background:'#094ce8', border:'#094ce8'}
+    //         },
+    //         asset: {
+    //             size: 5,
+    //             color: {background:'#f5ae63', border:'#f5ae63'},
+    //             borderWidth: 1
+    //         },
+    //         safteymain: {
+    //             size: 10,
+    //             color: {background:'#094ce8', border:'#094ce8'},
+    //             borderWidth: 1
+    //         },
+    //         assetmain: {
+    //             size: 10,
+    //             color: {background:'#f5ae63', border:'#f5ae63'},
+    //             borderWidth: 1
+    //         }
+    //     }
+    // };
 
     // initialize your network!
-    var network = new vis.Network(container, data, options);
+    // var network = new vis.Network(container, data, options);
     // setTimeout(function(){
-        network.fit(50);
+        // network.fit(50);
     // }, 500);
     
 
-});
+// });
 
