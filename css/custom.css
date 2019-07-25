@@ -62,6 +62,7 @@
 p.description,
 .features-boxes .item .texts p, .gray-dark-p {
     color: #333 !important;
+    line-height: 1.7;
 }
 .selet-list {
     width: 100%;
@@ -226,10 +227,10 @@ h4.title {
 h5.title {
     padding: 0;
     margin: 0;
-    font-size: 22px;
-    color: #717171;
+    font-size: 18px;
+    color: #333 !important;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     text-transform: unset !important;
 }
 
