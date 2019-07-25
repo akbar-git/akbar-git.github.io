@@ -95,7 +95,7 @@ h1.title {
 p a:not(.no-underline) {
     text-decoration: underline;
 }
-p {
+p, .divice-capability li {
     font-size: 14px !important;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
