@@ -1588,12 +1588,16 @@ $(window).on('load', function() {
          }
 
 $(document).ready(function(){
-    $('.fade').slick({
-        dots: true,
+    $('.fadin').slick({
+        dots: false,
         infinite: true,
         speed: 500,
         fade: true,
-        cssEase: 'linear'
+        autoplay: true,
+        cssEase: 'linear',
+        arrows : false,
+        prevArrow: false,
+        nextArrow: false
       });
 });
 
