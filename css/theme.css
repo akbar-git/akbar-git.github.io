@@ -117,6 +117,9 @@
 	.ff-inherit{font-family: inherit;}
 	.color-inherit{color:inherit;}
 	/* Large Texts */
+	.font-1-1 {
+		font-size: 1.1rem !important;
+	}
 	.text-lg, .font-40{ font-size:40px; }
 	.text-lg1, .font-50{ font-size:50px; }
 	.text-lg2{ font-size:60px; }
