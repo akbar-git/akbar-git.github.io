@@ -1,3 +1,6 @@
+body {
+    font-family: 'Montserrat', sans-serif !important;
+}
 /* Full Screen Video : Start */
 .fullscreen-bg {
     position: fixed;
@@ -126,6 +129,8 @@ p, .divice-capability li {
 }
 #navigation.modern .columns ul li.action-btn-holder {
     padding-top: 19px !important;
+    transition: all .5s;
+    -webkit-transition: all .5s;
 }
 #navigation.modern.white-nav.scrolled ul li.action-btn-holder {
     padding-top: 10px !important;
@@ -146,7 +151,55 @@ p, .divice-capability li {
 /* COMMON CHANGES : END */
 
 /* HOME PAGE : START */
+#home_slider .tparrows {
+    display: none !important;
+}
+#home_slider li {
+    z-index: -1;
+}
 
+.home-vido-text {
+    background: rgba(0,0,0,0.5);
+    line-height: 1.2 !important;
+    padding: 10px;
+    border-left: 5px solid #ff0019;
+    width: 470px;
+    height: 120px;
+    position: absolute;
+    display: block;
+    padding-top: 30px;
+    padding-left: 20px;
+    font-size: 1.5rem;
+    z-index: 2;
+    margin: 250px 0 0 30px;
+}
+
+@keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-o-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+.animate-flicker {
+    -webkit-animation: flickerAnimation 15s infinite;
+    -moz-animation: flickerAnimation 15s infinite;
+    -o-animation: flickerAnimation 15s infinite;
+    animation: flickerAnimation 15s infinite;
+}
 
 /* Logo */
 #navigation.modern .columns .logo a, 

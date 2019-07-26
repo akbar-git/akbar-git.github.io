@@ -1587,6 +1587,16 @@ $(window).on('load', function() {
             });
          }
 
+$(document).ready(function(){
+    $('.fade').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      });
+});
+
 
 // VIS CHARTS
  // Net Chart
