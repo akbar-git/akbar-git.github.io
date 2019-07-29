@@ -39,6 +39,31 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/9336fb29fe.js"></script>
 
+    <style type="text/css">
+        .features .slick-slider{ height: auto !important; }
+        .features .custom-slider .slick-list{ overflow: visible !important; }
+        .features .slick-slider .slick-slide,
+        .features .slick-slider .slick-clone{ overflow: visible; position: relative; opacity: .5; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; transition: all 0.5s; margin:0 40px;  }
+            @media only screen and (max-width: 991px){
+                .features .slick-slider .slick-slide,
+                .features .slick-slider .slick-clone{ margin:0 10px; }
+            }
+            @media only screen and (max-width: 481px){
+                .features .slick-list{ padding: 0 10px !important; }
+            }
+        /* Shadow Effect */
+        .features .slick-slider .slick-slide:before{ height: 100%; content:''; left:40px; right: 40px; bottom:-50px; height: 0%; position: absolute; border-radius: 60%; background-color:#000; z-index: -1; filter: blur(40px); opacity: 0; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; transition: all 2s; }
+        .features .slick-slider .slick-center{ opacity: 1; }
+        .features .slick-slider .slick-center:before{ opacity: 0.2 !important; height: 30%; }
+        /* Slide Texts */
+        .features .hero-slider, .hero-slider .slide{ overflow: visible; }
+        /* Border Radius */
+        .features .slick-slider .slick-slide,
+        .features .slick-slider .slick-slide img{ border-radius: 14px !important; }
+        .slick-slide{ height: auto; }
+        .features .circle-dots .slick-dots{ top:65px; }
+    </style>
+
 </head>
 
 <!-- BODY START -->
@@ -167,137 +192,29 @@
             <div class="container">
                 <!-- Title -->
                 <h3 class="title">TXT Solution is A Comprehensive System</h3>
-                <h1 class="bold-title large-heading">
-                    <span class="italic normal">For Managing </span> Fleet Operations
+                <h1 class="large-heading">
+                    <span class="italic light">For Managing </span> <span class="bold italic">Fleet Operations</span>
                 </h1>
             </div>
         </section>
         <!-- intro_section_2 -->
 
-
-        <!-- Plans Tables : Start -->
-
-        <div class="qdr-col-3 container t-center gray8 xs-mt">
-                <!-- Box -->
-                <div>
-                    <!-- Box Border -->
-                    <div class="border-1 border-gray bs-light-hover slow">
-                        <!-- Box Top -->
-                        <div class="bg-gray1 xs-py">
-                            <h4 class="extrabold no-pm">Basic</h4>
-                            <!-- <h5 class="light no-pm">Element Subtitle</h6> -->
-                            <!-- Price -->
-                            <h3>$<span class="text-lg2 extrabold">19.99</span></h3>
-                            <p class="uppercase">Per month per user / USD</p>
-                        </div>
-                        <!-- List -->
-                        <ul class="basic-list list-lg xs-my">
-                            <li>Unlimited LTE Network data</li>
-                            <li>ELD Compliance</li>
-                            <li>DVIR/PTI (Vehicle Inspection)</li>
-                            <li>Over the air firmware updates</li>
-                            <li>Automatic updates on driver ELD’s application</li>
-                            <li>'No Contract' Pay As You GO </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                        </ul>
-                        <!-- Button -->
-                        <div class="xs-my">
-                            <!-- Button -->
-                            <a href="#" class="xl-btn font-11 uppercase bold white bg-colored bg-colored2-hover radius-lg slow">Select This Plan</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Box -->
-                <div>
-                    <!-- Box Border -->
-                    <div class="border-1 border-gray bs-light-hover slow">
-                        <!-- Box Top -->
-                        <div class="bg-gray1 xs-py">
-                            <h4 class="extrabold no-pm">Pro</h4>
-                            <!-- <h5 class="light no-pm">Element Subtitle</h6> -->
-                            <!-- Price -->
-                            <h3>$<span class="text-lg2 extrabold">29.99</span></h3>
-                            <p class="uppercase">Per month per user / USD</p>
-                        </div>
-                        <!-- List -->
-                        <ul class="basic-list list-lg xs-my">
-                            <li>Unlimited LTE Network data</li>
-                            <li>ELD Compliance</li>
-                            <li>DVIR/PTI (Vehicle Inspection)</li>
-                            <li>Over the air firmware updates</li>
-                            <li>Automatic updates on driver ELD’s application</li>
-                            <li>Live GPS Tracking</li>
-                            <li>Two-way messages</li>
-                            <li>Customized alerts & notifications</li>
-                            <li>'No Contract' Pay As You GO </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                        </ul>
-                        <!-- Button -->
-                        <div class="xs-my">
-                            <!-- Button -->
-                            <a href="#" class="xl-btn font-11 uppercase bold white bg-colored bg-colored2-hover radius-lg slow">Select This Plan</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Box -->
-                <div>
-                    <!-- Box Border -->
-                    <div class="border-1 border-gray bs-light-hover slow relative">
-                        <!-- Mark -->
-                        <!-- <div class="basic-mark bold uppercase font-10 radius bg-info white">
-                            Hot!
-                        </div> -->
-                        <!-- Box Top -->
-                        <div class="bg-colored white xs-py">
-                            <h4 class="extrabold no-pm">Pro Plus</h4>
-                            <!-- <h5 class="light no-pm">Element Subtitle</h6> -->
-                            <!-- Price -->
-                            <h3>$<span class="text-lg2 extrabold">39.99</span></h3>
-                            <p class="uppercase">Per month per user / USD</p>
-                        </div>
-                        <!-- List -->
-                        <ul class="basic-list list-lg xs-my">
-                            <li>Unlimited LTE Network Data</li>
-                            <li>ELD Compliance</li>
-                            <li>DVIR/PTI (Vehicle Inspection)</li>
-                            <li>Over the air firmware updates</li>
-                            <li>Automatic updates on driver ELD’s application</li>
-                            <li>Live GPS Tracking</li>
-                            <li>Two-way messages</li>
-                            <li>Customised alerts & notifications</li>
-                            <li>IFTA Fuel Tax reporting (state-wise mileage)</li>
-                            <li>Vehicle Diagnostics/Engine Fault codes</li>
-                            <li>Navigation Map</li>
-                            <li>Driver on-road behaviour monitoring/Reporting</li>
-                            <li>Driver Score Card</li>
-                            <li>Vehicle Route history</li>
-                            <li>'No Contract' Pay As You GO </li>
-                        </ul>
-                        <!-- Button -->
-                        <div class="xs-my">
-                            <!-- Button -->
-                            <a href="#" class="xl-btn font-11 uppercase bold white bg-colored bg-colored2-hover radius-lg slow">Select This Plan</a>
-                        </div>
-                    </div>
-                </div>
+        <section id="features" class="features o-hidden mt">
+            <!-- Slider -->
+            <div class="custom-slider hero-slider circle-dots dark-dots container block-img c-move"
+                data-slick='{"dots": true, "arrows": false, "autoplay":true, "autoplaySpeed": 4000, "centerMode": true, "draggable":true, "speed": 900, "cssEase": "cubic-bezier(0.77, 0, 0.2, 1)", "slidesToShow": 1, "slidesToScroll": 1, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 1}}]}'>
+                <!-- Slide -->
+                <div><img src="images/blocks/block_10.jpg" alt="Features Image"></div>
+                <div><img src="images/blocks/block_11.jpg" alt="Features Image"></div>
+                <div><img src="images/blocks/block_12.jpg" alt="Features Image"></div>
+                <div><img src="images/blocks/block_13.jpg" alt="Features Image"></div>
             </div>
-
-        <!-- Plans Tables : End -->
-        
-
+            <!-- End Slider -->
+    
+            <div class="mt t-center">
+                <a href="https://themeforest.net/item/quadra-creative-multipurpose-template/21409528"  target="_blank" class="bold-subtitle h4 gray8 font-16 underline-hover">You deserve a stunning theme. Just start create a pixel perfect website today!</a>
+            </div>
+        </section>
 
         <!-- Device Prices : Start -->
         <div class="containe t-center mt">
