@@ -538,7 +538,10 @@ h5.title.bottomline {
     height: auto;
     margin-right: 15px
 }
-#fmcsa .list.list-side li .icon {
+.float-list-num.list.list-side > li {
+    display: block;
+}
+#fmcsa .list.list-side li .icon, .float-list-num  li .icon {
     width: 22px;
     height: 22px;
     background: #e8e8e8;
@@ -549,6 +552,7 @@ h5.title.bottomline {
     font-size: 10px;
     border-radius: 100%;
 }
+
 #fmcsa .qdr-controls .slick-arrow, 
 #fmcsa .qdr-controls-2 .slick-arrow {
     background-color: rgba(0,0,0,.1);
@@ -587,4 +591,10 @@ h5.title.bottomline {
     position: absolute;
     color: #fff;
     font-size: 17px;
+}
+.gray-border-tooltip .hotspots .popover {
+    background: rgba(0,0,0,0.8);
+    border: 5px solid gray;
+    font-size: 18px;
+    padding: 15px;
 }
