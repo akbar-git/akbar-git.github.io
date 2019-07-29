@@ -103,6 +103,9 @@ h1.title {
     font-family: 'Montserrat', sans-serif;
     text-transform: unset !important;
 }
+.large-heading {
+    font-size: 45px;
+}
 p a:not(.no-underline) {
     text-decoration: underline;
 }
