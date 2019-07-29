@@ -482,6 +482,7 @@
 	.xs-my{ margin-top:30px !important; margin-bottom:30px !important; }
 	.xs-mx{ margin-left:30px !important; margin-right:30px !important; }
 	.xs-mt{ margin-top:30px !important; } .xs-mr{ margin-right:30px !important; } .xs-mb{ margin-bottom:30px !important; } .xs-ml{ margin-left:30px !important; }
+	.xs-mdb{ margin-bottom:20px !important; }
 	.sm-my{ margin-top:50px !important; margin-bottom:50px !important; }
 	.sm-mx{ margin-left:50px !important; margin-right:50px !important; }
 	.sm-mt{ margin-top:50px !important; } .sm-mr{ margin-right:50px !important; } .sm-mb{ margin-bottom:50px !important; } .sm-ml{ margin-left:50px !important; }

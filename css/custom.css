@@ -48,8 +48,20 @@ body {
 /* Full Screen Video : End */
 
 /* COMMON CHANGES : START */
+.mx-w-35 {
+    width: 100%;
+    max-width: 35px;
+}
 .cursor-text {
     cursor: text !important;
+}
+.ud-shadow-md {
+    -webkit-box-shadow: 0px 0px 23px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 0px 23px rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 23px rgba(0,0,0,0.05);
+}
+#fmcsa .qdr-controls-2 .slick-dots {
+    bottom: unset;
 }
 .border-colored, .border-colored-hover:hover, 
 .border-colored, .border-colored-hover:hover, 
@@ -58,7 +70,7 @@ body {
 }
 .bg-colored, .bg-colored-hover:hover, .qdr-hover:before, 
 .features-boxes .item .icon:hover, .features-boxes .item:hover .icon,
-.qdr-hover-5:before, .bg-colored1 {
+.qdr-hover-5:before, .bg-colored1, .slider-tab-red .qdr-controls-2 .slick-dots li button {
     background-color: #ff0019 !important;
 }
 #navigation.modern .columns ul li a:hover, 
@@ -465,11 +477,11 @@ h5.title.bottomline {
 
 /* TESTIMONAL : START */
 
-.testimonial .circle-dots .slick-dots li button {
+.testimonial .circle-dots .slick-dots li button, .large-dots .circle-dots .slick-dots li button {
    width: 15px;
    height: 15px;
 }
-.circle-dots .slick-dots li.slick-active button {
+.circle-dots .slick-dots li.slick-active button, .large-dots .circle-dots .slick-dots li button {
     top: 0;
 }
 .testimonial .circle.bg-colored, 
@@ -518,4 +530,61 @@ h5.title.bottomline {
 }
 .inner-page #navigation.modern.white-nav ul li.active a, .inner-page #navigation.modern.white-nav ul li a:hover {
     color: #4a4a4a !important;
+}
+
+/* ELD */
+.eld-benifits .tick-icon {
+    width: 55px;
+    height: auto;
+    margin-right: 15px
+}
+#fmcsa .list.list-side li .icon {
+    width: 22px;
+    height: 22px;
+    background: #e8e8e8;
+    line-height: 22px;
+    top: -1px;
+    margin-right: 7px;
+    position: relative;
+    font-size: 10px;
+    border-radius: 100%;
+}
+#fmcsa .qdr-controls .slick-arrow, 
+#fmcsa .qdr-controls-2 .slick-arrow {
+    background-color: rgba(0,0,0,.1);
+}
+
+.slider-tab-red .qdr-controls-2 .slick-dots li.slick-active button, 
+.slider-tab-red .qdr-controls-2 .slick-dots li button {
+    width: 70px !important;
+    min-width: 70px !important;
+    height: 4px !important;
+}
+.slider-tab-red .qdr-controls-2 .slick-dots li:not(.slick-active) button {
+    background-color: gray !important;
+}
+#attributes .boxes h4 {
+    line-height: 2.4;
+}
+
+/* FOOTER , TOLL FREE */
+#footer .container {
+    position: relative;
+}
+.corner-box-red {
+    border-top: 30px solid #ff0019 !important;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    height: 0;
+    right: 0;
+    top: 0;
+    width: 430px;
+    position: absolute;
+}
+#footer .toll-free-nu.corner-box-red h6 {
+    top: -26px;
+    left: 12px;
+    position: absolute;
+    color: #fff;
+    font-size: 17px;
 }
