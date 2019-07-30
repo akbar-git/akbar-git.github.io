@@ -236,6 +236,14 @@ p, .divice-capability li {
     color: #d8d8d8;
 }
 
+#contact.top-text {
+    padding-top: 50px;
+}
+
+#contact.top-text h6 {
+    padding-bottom: 30px;
+}
+
 #slider_home_page {
     background: -moz-linear-gradient(top,  rgba(0,0,0,0.5) 0%, rgba(6,8,11,0.5) 1%, rgba(125,185,232,0) 22%);
     background: -webkit-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(6,8,11,0.5) 1%,rgba(125,185,232,0) 22%);
@@ -366,6 +374,14 @@ h5.title.bottomline {
     margin-bottom: 20px;
     border-bottom: 1px solid #ccc;
     display: inline-block;
+}
+
+h6.sub-text {
+    color: #000 !important;
+    font-weight: 400 !important;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: unset !important;
+    font-size: 25px;
 }
 
 .image-boxes .item h3, #services .inner h3, .features-boxes .item .texts h3, .grid-text-boxes h3 {
@@ -565,7 +581,7 @@ h5.title.bottomline {
 }
 
 /* GPS TRACKING : START */
-.rotate-boxs-gps .row > div {
+.rotate-boxs-gps .row > div, .rotate-boxs-partner .row > div {
     padding: 0;
     margin: 0;
 }
@@ -584,17 +600,33 @@ h5.title.bottomline {
 .rotate-boxs-gps .rotate-box {
     height: 500px; 
 }
-#rotateboxes.rotate-boxs-gps .box-details h4 {
-    text-transform: unset;
-}
 /* GPS TRACKING : END */
 
 /* APPLICATION : START */
-#application_benefits .boxs, #application_benefits .boxs .col  {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+
+.rotate-boxs-large .rotate-box .front .box-details h4 {
+    font-size: 2rem !important;
+    text-transform: unset !important;
 }
 /* APPLICATION : END */
+
+/* PARTNER : START */
+.rotate-boxs-partner #diminish_manual .rotate-box {
+    background: url('../images/blocks/partner/image_1.jpg') center center;
+}
+.rotate-boxs-partner #drive_productive .rotate-box {
+    background: url('../images/blocks/partner/image_2.jpg') center center;
+}
+.rotate-boxs-partner #improve_roi .rotate-box {
+    background: url('../images/blocks/partner/image_3.jpg') center center;
+}
+.rotate-boxs-partner #increase_customers .rotate-box {
+    background: url('../images/blocks/partner/image_4.jpg') center center;
+}
+.rotate-boxs-partner .rotate-box {
+    height: 500px; 
+}
+/* PARTNER : END */
 
 /* FOOTER , TOLL FREE */
 #footer .container {
