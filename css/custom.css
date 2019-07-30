@@ -163,6 +163,9 @@ p, .divice-capability li {
     font-weight: 500 !important;
     font-size: 1rem !important;
 }
+.dotted-btm-bdr {
+    border-bottom: 1px dotted #efefef;
+}
 /* COMMON CHANGES : END */
 
 /* HOME PAGE : START */
@@ -238,6 +241,7 @@ p, .divice-capability li {
 
 #contact.top-text {
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #contact.top-text h6 {
