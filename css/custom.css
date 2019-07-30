@@ -419,19 +419,9 @@ h5.title.bottomline {
 #rotateboxes.about-section-1 .box-details h4 {
     letter-spacing: unset;
     text-transform: uppercase;
-    margin-top: 85px;
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-#rotateboxes.about-section-1 .box-details h4, 
-#rotateboxes.about-section-1 .box-details h5
-{
-    text-shadow: 
-    1px 1px 2px #000, 1px 1px 2px #000, 1px 1px 2px #000, 
-    1px 1px 2px #000, 1px 1px 2px #000, 1px 1px 2px #000, 
-    1px 1px 2px #000,1px 1px 2px #000, 1px 1px 2px #000, 
-    1px 1px 2px #000, 1px 1px 2px #000, 1px 1px 2px #000, 
-    1px 1px 10px #000, 1px 1px 10px #000, 1px 1px 10px #000;
+    margin-top: 140px;
+    font-size: 1.6rem;
+    font-weight: 400;
 }
 #rotateboxes.about-section-1 .back p {
     font-size: 1.2rem;
@@ -573,6 +563,38 @@ h5.title.bottomline {
 #attributes .boxes h4 {
     line-height: 2.4;
 }
+
+/* GPS TRACKING : START */
+.rotate-boxs-gps .row > div {
+    padding: 0;
+    margin: 0;
+}
+.rotate-boxs-gps #diminish_manual .rotate-box {
+    background: url('../images/blocks/gps/image_1.jpg') center center;
+}
+.rotate-boxs-gps #drive_productive .rotate-box {
+    background: url('../images/blocks/gps/image_2.jpg') center center;
+}
+.rotate-boxs-gps #improve_roi .rotate-box {
+    background: url('../images/blocks/gps/image_3.jpg') center center;
+}
+.rotate-boxs-gps #increase_customers .rotate-box {
+    background: url('../images/blocks/gps/image_4.jpg') center center;
+}
+.rotate-boxs-gps .rotate-box {
+    height: 500px; 
+}
+#rotateboxes.rotate-boxs-gps .box-details h4 {
+    text-transform: unset;
+}
+/* GPS TRACKING : END */
+
+/* APPLICATION : START */
+#application_benefits .boxs, #application_benefits .boxs .col  {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+/* APPLICATION : END */
 
 /* FOOTER , TOLL FREE */
 #footer .container {
