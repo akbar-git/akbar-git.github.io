@@ -68,12 +68,12 @@ p, li {
 }
 .border-colored, .border-colored-hover:hover, 
 .border-colored, .border-colored-hover:hover, 
-.circle-dots.dark-dots>.slick-dots li.slick-active button {
+.circle-dots.dark-dots>.slick-dots li.slick-active button, .cbp-l-filters-button .cbp-filter-item.cbp-filter-item-active {
     border-color: #ff0019 !important;
 }
 .bg-colored, .bg-colored-hover:hover, .qdr-hover:before, 
 .features-boxes .item .icon:hover, .features-boxes .item:hover .icon,
-.qdr-hover-5:before, .bg-colored1, .slider-tab-red .qdr-controls-2 .slick-dots li button {
+.qdr-hover-5:before, .bg-colored1, .slider-tab-red .qdr-controls-2 .slick-dots li button, .cbp-l-filters-button .cbp-filter-item.cbp-filter-item-active {
     background-color: #ff0019 !important;
 }
 #navigation.modern .columns ul li a:hover, 
@@ -627,6 +627,25 @@ h6.sub-text {
     height: 500px; 
 }
 /* PARTNER : END */
+
+/* FAQ : START */
+.faq-block .cbp-l-caption-body a {
+    text-decoration: underline;
+}
+.cbp-caption-expand .cbp-caption-defaultWrap {
+    color: #333;
+}
+.cbp-caption-expand .cbp-l-caption-body {
+    color: #333;
+    line-height: 1.7;
+}
+.faq-block .cbp-l-caption-body ul {
+    margin: 10px 0 0 20px;
+}
+.faq-block .cbp-l-caption-body ul li {
+    list-style-type: disc;
+}
+/* FAQ : END */
 
 /* FOOTER , TOLL FREE */
 #footer .container {
