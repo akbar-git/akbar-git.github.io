@@ -48,6 +48,9 @@ body {
 /* Full Screen Video : End */
 
 /* COMMON CHANGES : START */
+p, li {
+    letter-spacing: 0.2px;
+}
 .mx-w-35 {
     width: 100%;
     max-width: 35px;

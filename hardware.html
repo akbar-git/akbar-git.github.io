@@ -4,8 +4,8 @@
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TXT E-Solutions - Plans</title>
-    <meta name="description" content="TXT e Solutions" />
+    <title>TXT E-Solutions - Hardware</title>
+    <meta name="description" content="TXT E-Solutions" />
     <!--Keywords -->
     <meta name="keywords" content="modern, creative, website, html5, bootstrap responsive, parallax, soft, front-end, designer, coming soon, account, portfolio, photographer, grid, social, modules, design, personal, faq, one page, multi-purpose, branding, studio, agency, templates, css3, carousel, slider, corporate, theme, quadra, demos, blog, shop" />
     <meta name="author" content="GoldEyes" />
@@ -39,13 +39,29 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/9336fb29fe.js"></script>
 
-    <style>
-        #navigation.modern.white-nav, #navigation.modern.white-nav.sticky, #navigation.modern.white-nav.box-shadow {
-            /* background: -moz-linear-gradient(left,  rgba(30,87,153,0) 0%, rgba(0,0,0,0.8) 44%); */
-            background: -webkit-linear-gradient(left,  rgba(30,87,153,0) 10%,rgba(0,0,0,0.9) 90%) !important;
-            /* background: linear-gradient(to right,  rgba(30,87,153,0) 0%,rgba(0,0,0,0.8) 44%); */
-            /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#cc000000',GradientType=1 );  */
-        }
+    <style type="text/css">
+        .features .slick-slider{ height: auto !important; }
+        .features .custom-slider .slick-list{ overflow: visible !important; }
+        .features .slick-slider .slick-slide,
+        .features .slick-slider .slick-clone{ overflow: visible; position: relative; opacity: .5; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; transition: all 0.5s; margin:0 40px;  }
+            @media only screen and (max-width: 991px){
+                .features .slick-slider .slick-slide,
+                .features .slick-slider .slick-clone{ margin:0 10px; }
+            }
+            @media only screen and (max-width: 481px){
+                .features .slick-list{ padding: 0 10px !important; }
+            }
+        /* Shadow Effect */
+        .features .slick-slider .slick-slide:before{ height: 100%; content:''; left:40px; right: 40px; bottom:-50px; height: 0%; position: absolute; border-radius: 60%; background-color:#000; z-index: -1; filter: blur(40px); opacity: 0; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; transition: all 2s; }
+        .features .slick-slider .slick-center{ opacity: 1; }
+        .features .slick-slider .slick-center:before{ opacity: 0.2 !important; height: 30%; }
+        /* Slide Texts */
+        .features .hero-slider, .hero-slider .slide{ overflow: visible; }
+        /* Border Radius */
+        .features .slick-slider .slick-slide,
+        .features .slick-slider .slick-slide img{ border-radius: 14px !important; }
+        .slick-slide{ height: auto; }
+        .features .circle-dots .slick-dots{ top:65px; }
     </style>
 
 </head>
@@ -65,6 +81,7 @@
             </div>
         </div>
     </div>
+
 
 
     <!-- SIDEBAR -->
@@ -102,7 +119,6 @@
      <!-- ALL THEME -->
     <div id="all" class="pusher">
 
-
         <!-- NAVIGATION -->
         <nav id="navigation" class="white-nav shrink modern hover4 hover radius-drop" data-offset="55">
             <!-- Columns -->
@@ -111,7 +127,6 @@
                 <div class="logo" data-infocard="#infocard">
                     <a href="index.html">
                         <img src="images/logos/Logo_90.png" alt="TXT Logo" style="display: inline-block">
-                        <!-- <img src="images/caption.png" alt="Connecting you to the future" style="display: inline-block;margin-left: 10px;" class="retina-logo"> -->
                     </a>
                 </div>
                 
@@ -127,7 +142,7 @@
                                 <li><a href="#" class="stay">Overview</a></li>
                                 <li><a href="eld.html" class="stay">TXT ELD</a></li>
                                 <li><a href="#" class="stay">Cloud-based dashcam</a></li>
-                                <li><a href="hardware.html" class="stay">ELD Hardware</a></li>
+                                <li class="active"><a href="#" class="stay">ELD Hardware</a></li>
                                 <li><a href="#" class="stay">TXT Software</a></li>
                                 <li><a href="#" class="stay">TXT Dashboard</a></li>
                                 <li><a href="#" class="stay">Safety</a></li>
@@ -174,256 +189,254 @@
         <section id="intro_section_2" class="t-center sm-pt mt" style="background-color: #fff">
             <div class="container">
                 <!-- Title -->
-                <h2 class="title-thin antonio">
-                    Choose The Best Bundle For Your Fleet!
-                </h2>
-            </div>
-        </section>
-        <!-- intro_section_2 -->
-
-        <section>
-            <div class="container t-center">
-                <h3 class="title xxs-mt">TXT ELD Has A Wide Range Of Features To Choose From, However,<br> The Three Best Bundles Are Tailor-Made For Your Easy Reference.</h2>
-                <!-- <div class="title-strips-over dark my-25"></div> -->
-            </div>
-            <div class="container t-center xs-my">
-                <img src="images/plans/no_contract.jpg" alt="" class="animated-item-scale">
+                <h1 class="large-heading">
+                    T<span class="t-color-red1">X</span>T <span class="light">ELD Hardware</span>
+                </h1>
             </div>
         </section>
 
+    <!-- Home -->
+    <section id="home" class="xxl-py t-center white fullwidth sm-mt">
+        <!-- Background image - you can choose parallax ratio and offset -->
+        <div class="bg-parallax skrollr" data-anchor-target="#home" data-0="transform:translate3d(0, 0px, 0px);" data-900="transform:translate3d(0px, 150px, 0px);" data-background="images/backgrounds/hardware/banner_1.jpg"></div>
+        <!-- Container -->
+        <div class="container skrollr" data-0="opacity:1;" data-210="opacity:0;">
+            <div class="t-center white">
+                <!-- <h1 class="bold-title lh-sm">
+                    Exclusive Variations Ready to Create <br class="hidden-xs">
+                    a Pixel Perfect Website
+                </h1> -->
+            </div>
+        </div>
+        <!-- End Container -->
+    </section>
+    <!-- END Home -->
 
-        <!-- Plans Tables : Start -->
+    <section>
+        <div class="container mt t-center">
+            <p class="font-22 lh-md normal sm-mt black"><span class="bold">TXT ELD</span> comes with enterprise-grade hardware with a vivid single display unit that functions with a built-in internet so one can avoid the hassle of multiple device plug-ins. A magnetic mount powers the device and allows for quick and effortless removal on the vehicle dashboard. The audio-out capability enables sound through the truck's audio system. It covers seamless coverage of US and Canada maps and allows customizable display.  The device is visually stunning, scratch-resistant, and incredibly sturdy, direct the driver's on-road navigation safely and efficiently. </p>
+        </div>
+    </section>
 
-        <div class="qdr-col-3 container t-center gray8 xs-mt">
-                <!-- Box -->
+    <!-- Twin Contents -->
+    <section class="pt bg-white">
+        <!-- Row to twins -->
+        <div class="row no-mx calculate-height lightbox_gallery fullwidth">
+
+            <!-- Right image and video button -->
+            <div class="col-md-6 col-12 bg-cover bg-center fade" data-background="images/backgrounds/hardware/truck_twin.jpg">
+                
+            </div>
+            <!-- End Item -->
+
+            <!-- Item -->
+            <div class="col-md-6 col-12 bg-dark white t-left lg-py py-mobile sm-pl sm-pr">
+                <!-- Details -->
                 <div>
-                    <!-- Box Border -->
-                    <div class="border-1 border-gray bs-light-hover slow">
-                        <!-- Box Top -->
-                        <div class="bg-gray1 xs-py">
-                            <h4 class="extrabold no-pm">Basic</h4>
-                            <!-- <h5 class="light no-pm">Element Subtitle</h6> -->
-                            <!-- Price -->
-                            <h3>$<span class="text-lg2 extrabold">19.99</span></h3>
-                            <p class="uppercase">Per month per user / USD</p>
-                        </div>
+                    <h1 class="bold-title">
+                        <span class="light">Affordable state-of-the-art Device</span>
+                    </h1>
+                    <div class="fadin">
                         <!-- List -->
-                        <ul class="basic-list list-lg xs-my">
-                            <li>'No Contract' Pay As You GO </li>
-                            <li>Unlimited LTE Network data</li>
-                            <li>ELD Compliance</li>
-                            <li>DVIR/PTI (Vehicle Inspection)</li>
-                            <li>Over the air firmware updates</li>
-                            <li>Automatic updates on driver ELD’s application</li>
-                            
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
+                        <ul class="list list-circle list-side font-16 bold-subtitle sm-mt float-list-num lh-lg">
+                            <li>
+                                <div class="row">
+                                    <div class="col-2 mx-w-35">
+                                        <span class="icon">&nbsp;</span>
+                                    </div>
+                                    <div class="col-10 italic">
+                                        <a nohref>Tough and Durable Cover glass</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-2 mx-w-35">
+                                        <span class="icon">&nbsp;</span>
+                                    </div>
+                                    <div class="col-10 italic">
+                                        <a nohref>Weatherproof Device</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-2 mx-w-35">
+                                        <span class="icon">&nbsp;</span>
+                                    </div>
+                                    <div class="col-10 italic">
+                                        <a nohref>Scratch and impact resistant </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-2 mx-w-35">
+                                        <span class="icon">&nbsp;</span>
+                                    </div>
+                                    <div class="col-10 italic">
+                                        <a nohref>Portable Device</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-2 mx-w-35">
+                                        <span class="icon">&nbsp;</span>
+                                    </div>
+                                    <div class="col-10 italic">
+                                        <a nohref>No requirement of additional device or data</a>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
-                        <!-- Button -->
-                        <div class="xs-my">
-                            <!-- Button -->
-                            <a href="#" class="xl-btn font-11 uppercase bold white bg-colored bg-colored2-hover radius-lg slow">Select This Plan</a>
-                        </div>
                     </div>
-                </div>
-                <!-- Box -->
-                <div>
-                    <!-- Box Border -->
-                    <div class="border-1 border-gray bs-light-hover slow">
-                        <!-- Box Top -->
-                        <div class="bg-gray1 xs-py">
-                            <h4 class="extrabold no-pm">Pro</h4>
-                            <!-- <h5 class="light no-pm">Element Subtitle</h6> -->
-                            <!-- Price -->
-                            <h3>$<span class="text-lg2 extrabold">29.99</span></h3>
-                            <p class="uppercase">Per month per user / USD</p>
-                        </div>
-                        <!-- List -->
-                        <ul class="basic-list list-lg xs-my">
-                            <li>'No Contract' Pay As You GO </li>
-                            <li>Unlimited LTE Network data</li>
-                            <li>ELD Compliance</li>
-                            <li>DVIR/PTI (Vehicle Inspection)</li>
-                            <li>Over the air firmware updates</li>
-                            <li>Automatic updates on driver ELD’s application</li>
-                            <li>Live GPS Tracking</li>
-                            <li>Two-way messages</li>
-                            <li>Customized alerts & notifications</li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                        </ul>
-                        <!-- Button -->
-                        <div class="xs-my">
-                            <!-- Button -->
-                            <a href="#" class="xl-btn font-11 uppercase bold white bg-colored bg-colored2-hover radius-lg slow">Select This Plan</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Box -->
-                <div>
-                    <!-- Box Border -->
-                    <div class="border-1 border-gray bs-light-hover slow relative">
-                        <!-- Mark -->
-                        <div class="basic-mark bold uppercase font-10 radius bg-black white">
-                            Most Popular
-                        </div>
-                        <!-- Box Top -->
-                        <div class="bg-colored white xs-py">
-                            <h4 class="extrabold no-pm">Pro Plus</h4>
-                            <!-- <h5 class="light no-pm">Element Subtitle</h6> -->
-                            <!-- Price -->
-                            <h3>$<span class="text-lg2 extrabold">39.99</span></h3>
-                            <p class="uppercase">Per month per user / USD</p>
-                        </div>
-                        <!-- List -->
-                        <ul class="basic-list list-lg xs-my">
-                            <li>'No Contract' Pay As You GO </li>
-                            <li>Unlimited LTE Network Data</li>
-                            <li>ELD Compliance</li>
-                            <li>DVIR/PTI (Vehicle Inspection)</li>
-                            <li>Over the air firmware updates</li>
-                            <li>Automatic updates on driver ELD’s application</li>
-                            <li>Live GPS Tracking</li>
-                            <li>Two-way messages</li>
-                            <li>Customised alerts & notifications</li>
-                            <li>IFTA Fuel Tax reporting (state-wise mileage)</li>
-                            <li>Vehicle Diagnostics/Engine Fault codes</li>
-                            <li>Navigation Map</li>
-                            <li>Driver on-road behaviour monitoring/Reporting</li>
-                            <li>Driver Score Card</li>
-                            <li>Vehicle Route history</li>
-                        </ul>
-                        <!-- Button -->
-                        <div class="xs-my">
-                            <!-- Button -->
-                            <a href="#" class="xl-btn font-11 uppercase bold white bg-colored bg-colored2-hover radius-lg slow">Select This Plan</a>
-                        </div>
-                    </div>
+                    <a href="#" class="slow lg-btn font-11 extrabold uppercase white bg-colored1 qdr-hover-6 radius-lg bs-md-hover">
+                        Explore More
+                    </a>
                 </div>
             </div>
+            <!-- End Item -->
 
-        <!-- Plans Tables : End -->
+        </div>
+        <!-- End Container to twins -->
+    </section>
+    <!-- END TWIN CONTENTS SECTION -->
+
+        <!-- Content -->
+        <section id="content" class="sm-pb bg-white md-my">
+            <!-- Container to details -->
+            <div class="container clearfix">
+                <div class="row">
+                    <!-- Left Image -->
+                    <div class="col-md-6 col-12">
+                        <a href="https://vimeo.com/155981440" class="lightbox block block-img">
+                            <img src="images/loader.gif" data-original="images/hardware/truck_1.png" alt="content design image">
+                        </a>
+                    </div>
+                    <!-- Right Texts -->
+                    <div class="col-md-6 col-12 xs-py">
+                        <h1 class="bold-title">
+                            Benefits
+                        </h1>
+                        <!-- List -->
+                        <ul class="list list-circle list-side font-16 bold-subtitle sm-mt float-list-num">
+                            <li>
+                                <div class="row">
+                                    <div class="col-2 mx-w-35">
+                                        <span class="icon">1</span>
+                                    </div>
+                                    <div class="col-10">
+                                        <a nohref>Captures detailed HOS log</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-2 mx-w-35">
+                                        <span class="icon">2</span>
+                                    </div>
+                                    <div class="col-10">
+                                        <a nohref>Updated compliant error-free log</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-2 mx-w-35">
+                                        <span class="icon">3</span>
+                                    </div>
+                                    <div class="col-10">
+                                        <a nohref>No scenario of missing record</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-2 mx-w-35">
+                                        <span class="icon">4</span>
+                                    </div>
+                                    <div class="col-10">
+                                        <a nohref>Provides driving hours over their daily allowance</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-2 mx-w-35">
+                                        <span class="icon">5</span>
+                                    </div>
+                                    <div class="col-10">
+                                        <a nohref>The camera system starts recording and continues to do so until the engine is running.</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-2 mx-w-35">
+                                        <span class="icon">6</span>
+                                    </div>
+                                    <div class="col-10">
+                                        <a nohref>Save from hefty fines for irregular logs</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-2 mx-w-35">
+                                        <span class="icon">7</span>
+                                    </div>
+                                    <div class="col-10">
+                                        <a nohref>Monitor driver behavior like driver’s fatigue, cell phone use, rash driving.</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-2 mx-w-35">
+                                        <span class="icon">8</span>
+                                    </div>
+                                    <div class="col-10">
+                                        <a nohref>Log report easily transferable to DOT officer</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-2 mx-w-35">
+                                        <span class="icon">9</span>
+                                    </div>
+                                    <div class="col-10">
+                                        <a nohref>TXT provides 24/7 Technical support</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-2 mx-w-35">
+                                        <span class="icon">10</span>
+                                    </div>
+                                    <div class="col-10">
+                                        <a nohref>Affordable</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- Buttons -->
+                        <!-- <div>
+                            <a href="#" target="_blank" class="lg-btn bg-colored1 radius-lg bg-dark-hover white slow bs-lg-hover bold-subtitle font-12 qdr-hover-4 xxs-mt">
+                                EXPLORE MORE
+                            </a>
+                        </div> -->
+                    </div>
+                    <!-- End Right Texts -->
+                </div>  
+            </div>
+            <!-- End Container to details -->
+        </section>
+        <!-- End Content -->
+
         
-
-
-        <!-- Device Prices : Start -->
-        <div class="containe t-center mt">
-            <h2 class="title">The Hardware Cost Makes TXT ELD</h2>
-            <h3 class="title">The Most  Affordable Option For Fleet Management Solution</h3>
-        </div>
-        <!-- Title Stripes -->
-        
-
-        <div id="device_prices" class="boxes container t-center clearfix sm-mt">
-                <div class="row clearfix">
-                    <!-- Box -->
-                    <div class="dotted-boxs col-md-6 col-lg-3 col-sm-6 col-12 xs-mt-mobile">
-                        <div class="row t-center">
-                            <!-- Icon -->
-                            <!-- <div class="col-4 t-right gray3 xxs-mt">
-                                <i class="fa fa-superpowers fa-4x"></i>
-                            </div> -->
-                            <div class="boxs col-12 stay xl-btn click-effect dark-effect block border-btn border-gray4 border-dashed bs-lg-hover radius slow ">
-                                <h5 class="gray6 extrabold">TELEMATICS TERMINAL</h5>
-                                <div class="fact" data-source="110000">
-                                    <div><h2 class="gray7 playfair">$299</h2></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Box -->
-                    <div class="dotted-boxs col-md-6 col-lg-3 col-sm-6 col-12 xs-mt-mobile">
-                        <div class="row t-center">
-                            <!-- Icon -->
-                            <!-- <div class="col-4 t-right gray3 xxs-mt">
-                                <i class="fa fa-ravelry fa-4x"></i>
-                            </div> -->
-                            <div class="boxs col-12 stay xl-btn click-effect dark-effect block border-btn border-gray4 border-dashed bs-lg-hover radius slow ">
-                                <h5 class="gray6 extrabold">MOBILE DATA TERMINAL STAND </h5>
-                                <div class="fact" data-source="2200">
-                                    <div><h2 class="gray7 playfair">$40</h2></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Box -->
-                    <div class="dotted-boxs col-md-6 col-lg-3 col-sm-6 col-12 xs-mt-mobile">
-                        <div class="row t-center">
-                            <!-- Icon -->
-                            <!-- <div class="col-4 t-right gray3 xxs-mt">
-                                <i class="fa fa-thermometer-4 fa-4x"></i>
-                            </div> -->
-                            <div class="boxs col-12 stay xl-btn click-effect dark-effect block border-btn border-gray4 border-dashed bs-lg-hover radius slow ">
-                                <h5 class="gray6 extrabold">DATA TERMINAL COVER</h5>
-                                <div class="fact" data-source="3000">
-                                    <div><h2 class="gray7 playfair">$30</h2></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-
-                <div class="row clearfix">
-                    <!-- Box -->
-                    <div class="dotted-boxs col-md-6 col-lg-3 col-sm-6 col-12 xs-mt-mobile">
-                        <div class="row t-center">
-                            <!-- Icon -->
-                            <!-- <div class="col-4 t-right gray3 xxs-mt">
-                                <i class="fa fa-shower fa-4x"></i>
-                            </div> -->
-                            <div class="boxs col-12 stay xl-btn click-effect dark-effect block border-btn border-gray4 border-dashed bs-lg-hover radius slow ">
-                                <h5 class="gray6 extrabold">DASH CAM CAMERA </h5>
-                                <div class="fact" data-source="14000">
-                                    <div><h2 class="gray7 playfair">$90</h2></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Box -->
-                    <div class="dotted-boxs col-md-6 col-lg-3 col-sm-6 col-12 xs-mt-mobile">
-                        <div class="row">
-                            <!-- Icon -->
-                            <!-- <div class="col-4 t-right gray3 xxs-mt">
-                                <i class="fa fa-shower fa-4x"></i>
-                            </div> -->
-                            <div class="boxs col-12 stay xl-btn click-effect dark-effect block border-btn border-gray4 border-dashed bs-lg-hover radius slow ">
-                                <h5 class="gray6 extrabold">TERMINAL CONNECTING WIRE</h5>
-                                <div class="fact" data-source="14000">
-                                    <div><h2 class="gray7 playfair">$75</h2></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-
-        <!-- Device Prices : End -->
-
-        <div class="bg-gray2 gray xxs-pt my xs-py">
-            <p class="description t-center font-18"><span class="t-color-red1">The complete telematics will be $349 WITH 1 YEAR OF WARRANTY**</span> <br>
-                ** WARRANTY DOES NOT COVER WATER/ PHYSICAL DAMAGE</p>
-        </div>
-
-        <div class="container xs-my t-center">
-            <p class="description">*All prices are in USD. <br>
-            All the bundles come with a fully embedded computer mobile data terminal hardware.</p>
-            <p class="description mb">Feel free to get in touch with us, our sales representative will carve customized solution for you.</p>
-
-        </div>
-
        
         <!-- FOOTER -->
         <footer id="footer" class="classic_footer">
@@ -516,9 +529,6 @@
                 </div>
             </footer>
             <!-- END FOOTER -->
-
-
-
 
 
         <!-- Quick Contact Form -->
