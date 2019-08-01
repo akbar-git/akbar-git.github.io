@@ -66,6 +66,11 @@ p, li {
 #fmcsa .qdr-controls-2 .slick-dots {
     bottom: unset;
 }
+.border-tb-white {
+    border: 1px solid #fff;
+    border-left: 0;
+    border-right: 0;
+}
 .border-colored, .border-colored-hover:hover, 
 .border-colored, .border-colored-hover:hover, 
 .circle-dots.dark-dots>.slick-dots li.slick-active button, .cbp-l-filters-button .cbp-filter-item.cbp-filter-item-active {
