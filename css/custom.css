@@ -614,7 +614,7 @@ h6.sub-text {
 /* APPLICATION : START */
 
 .rotate-boxs-large .rotate-box .front .box-details h4 {
-    font-size: 2rem !important;
+    font-size: 1.8rem !important;
     text-transform: unset !important;
 }
 /* APPLICATION : END */
@@ -655,6 +655,47 @@ h6.sub-text {
     list-style-type: disc;
 }
 /* FAQ : END */
+
+/* Solutions : Start */
+.rotate-boxs-medium .rotate-box {
+    height: 260px;
+}
+#rotateboxes.about-section-1.rotate-boxs-medium .box-details h4 {
+    margin-top: 60px;
+    text-transform: capitalize;
+    font-weight: 100;
+}
+#gal-01 .rotate-box {
+    background: url('../images/solutions/image_1.png') top left / 100% auto no-repeat;
+}
+#gal-02 .rotate-box {
+    background: url('../images/solutions/image_2.png') top left / 100% auto no-repeat;
+}
+#gal-03 .rotate-box {
+    background: url('../images/solutions/image_3.png') top left / 100% auto no-repeat;
+}
+#gal-04 .rotate-box {
+    background: url('../images/solutions/image_4.png') top left / 100% auto no-repeat;
+}
+#gal-05 .rotate-box {
+    background: url('../images/solutions/image_5.png') top left / 100% auto no-repeat;
+}
+#gal-06 .rotate-box {
+    background: url('../images/solutions/image_6.png') top left / 100% auto no-repeat;
+}
+#gal-07 .rotate-box {
+    background: url('../images/solutions/image_7.png') top left / 100% auto no-repeat;
+}
+#gal-08 .rotate-box {
+    background: url('../images/solutions/image_8.png') top left / 100% auto no-repeat;
+}
+#gal-09 .rotate-box {
+    background: url('../images/solutions/image_9.png') top left / 100% auto no-repeat;
+}
+#gal-10 .rotate-box {
+    background: url('../images/solutions/image_10.png') top left / 100% auto no-repeat;
+}
+/* Solutions : End */
 
 /* FOOTER , TOLL FREE */
 #footer .container {

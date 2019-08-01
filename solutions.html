@@ -4,8 +4,8 @@
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TXT E-Solutions - Plans</title>
-    <meta name="description" content="TXT e Solutions" />
+    <title>TXT E-Solutions - Solutions</title>
+    <meta name="description" content="TXT E-Solutions" />
     <!--Keywords -->
     <meta name="keywords" content="modern, creative, website, html5, bootstrap responsive, parallax, soft, front-end, designer, coming soon, account, portfolio, photographer, grid, social, modules, design, personal, faq, one page, multi-purpose, branding, studio, agency, templates, css3, carousel, slider, corporate, theme, quadra, demos, blog, shop" />
     <meta name="author" content="GoldEyes" />
@@ -39,13 +39,29 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/9336fb29fe.js"></script>
 
-    <style>
-        #navigation.modern.white-nav, #navigation.modern.white-nav.sticky, #navigation.modern.white-nav.box-shadow {
-            /* background: -moz-linear-gradient(left,  rgba(30,87,153,0) 0%, rgba(0,0,0,0.8) 44%); */
-            background: -webkit-linear-gradient(left,  rgba(30,87,153,0) 10%,rgba(0,0,0,0.9) 90%) !important;
-            /* background: linear-gradient(to right,  rgba(30,87,153,0) 0%,rgba(0,0,0,0.8) 44%); */
-            /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#cc000000',GradientType=1 );  */
-        }
+    <style type="text/css">
+        .features .slick-slider{ height: auto !important; }
+        .features .custom-slider .slick-list{ overflow: visible !important; }
+        .features .slick-slider .slick-slide,
+        .features .slick-slider .slick-clone{ overflow: visible; position: relative; opacity: .5; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; transition: all 0.5s; margin:0 40px;  }
+            @media only screen and (max-width: 991px){
+                .features .slick-slider .slick-slide,
+                .features .slick-slider .slick-clone{ margin:0 10px; }
+            }
+            @media only screen and (max-width: 481px){
+                .features .slick-list{ padding: 0 10px !important; }
+            }
+        /* Shadow Effect */
+        .features .slick-slider .slick-slide:before{ height: 100%; content:''; left:40px; right: 40px; bottom:-50px; height: 0%; position: absolute; border-radius: 60%; background-color:#000; z-index: -1; filter: blur(40px); opacity: 0; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; transition: all 2s; }
+        .features .slick-slider .slick-center{ opacity: 1; }
+        .features .slick-slider .slick-center:before{ opacity: 0.2 !important; height: 30%; }
+        /* Slide Texts */
+        .features .hero-slider, .hero-slider .slide{ overflow: visible; }
+        /* Border Radius */
+        .features .slick-slider .slick-slide,
+        .features .slick-slider .slick-slide img{ border-radius: 14px !important; }
+        .slick-slide{ height: auto; }
+        .features .circle-dots .slick-dots{ top:65px; }
     </style>
 
 </head>
@@ -65,6 +81,7 @@
             </div>
         </div>
     </div>
+
 
 
     <!-- SIDEBAR -->
@@ -111,7 +128,6 @@
                 <div class="logo" data-infocard="#infocard">
                     <a href="index.html">
                         <img src="images/logos/Logo_90.png" alt="TXT Logo" style="display: inline-block">
-                        <!-- <img src="images/caption.png" alt="Connecting you to the future" style="display: inline-block;margin-left: 10px;" class="retina-logo"> -->
                     </a>
                 </div>
                 
@@ -135,10 +151,10 @@
                                 <li><a href="compliance.html" class="stay">Compliance</a></li>
                                 <li><a href="efficiency.html" class="stay">Efficiency</a></li>
                                 <li><a href="telematics.html" class="stay">Telematics</a></li>
-                                <li><a href="asset.html" class="stay">Assets</a></li>
+                                <li><a href="#" class="stay">Assets</a></li>
                             </ul>
                         </li>
-                        <li><a href="solutions.html" class="stay">Solutions</a></li>
+                        <li class="active"><a href="#" class="stay">Solutions</a></li>
                         <li class="dropdown-toggle"><a href="#" class="stay">Resources</a>
                             <ul class="dropdown-menu to-right">
                                 <li><a href="faq.html" class="stay">FAQs</a></li>
@@ -147,7 +163,7 @@
                                 <li><a href="#" class="stay">News & Updates</a></li>
                             </ul>
                         </li>
-                        <li class="active"><a href="plans.html" class="stay">Plans</a></li>
+                        <li><a href="plans.html" class="stay">Plans</a></li>
                         <li><a href="partner.html" class="stay">Become our Partner</a></li>
                         <li class="action-btn-holder"><a href="plans.html" class="stay lg-btn bg-colored1 white qdr-hover-1-right radius-sm action-btn-red">Buy Now</a></li>
                         <!-- <li><a href="#" class="stay">Login / Sign Up</a></li> -->
@@ -175,256 +191,272 @@
         <section id="intro_section_2" class="t-center sm-pt mt" style="background-color: #fff">
             <div class="container">
                 <!-- Title -->
-                <h2 class="title-thin antonio">
-                    Choose The Best Bundle For Your Fleet!
-                </h2>
+                <h1 class="bold-title">
+                    Solutions <span class="light">Overview</span>
+                </h1>
+                <h3 class="title xxs-mt xs-mt font-16">TXT delivers an integrated solution for the fleet companies to manage yield on-road. This cloud-based solution is exceedingly valuable to fleet owners, their users, and carve relevant opportunities on healthy navigation with agility and reliability. TXT focusses on creating smooth dashboard experience and generate simplified operative data for the drivers and backend to run their day-to-day functions. This comprehensive platform can streamline operational activities in the transportation business by improving safety and increasing overall productivity.</h3>
             </div>
         </section>
         <!-- intro_section_2 -->
 
-        <section>
-            <div class="container t-center">
-                <h3 class="title xxs-mt">TXT ELD Has A Wide Range Of Features To Choose From, However,<br> The Three Best Bundles Are Tailor-Made For Your Easy Reference.</h2>
+        <!-- Divider -->
+        <div class="divider-1 uppercase container bold sm-mt">
+            <span class="font-22">Key Features of T<span class="t-color-red1">X</span>T ELD</span>
+        </div>
+
+        <!-- Section to boxes -->
+        <section id="rotateboxes" class="sm-pb gray7 sm-mt about-section-1 rotate-boxs-gps rotate-boxs-medium">
+            <!-- Divider -->
+            <!-- <div class="divider-3 font-11 uppercase container extrabold mt sm-my">
+                <span> - &nbsp; - &nbsp; - &nbsp;</span>
+            </div> -->
+            <!-- Container -->
+            <div class="white t-center">
+                <!-- <h3 class="title antonio gray7">Key attributes of TXT ELD</h3> -->
                 <!-- <div class="title-strips-over dark my-25"></div> -->
-            </div>
-            <div class="container t-center xs-my">
-                <img src="images/plans/no_contract.jpg" alt="" class="animated-item-scale">
-            </div>
-        </section>
-
-
-        <!-- Plans Tables : Start -->
-
-        <div class="qdr-col-3 container t-center gray8 xs-mt">
-                <!-- Box -->
-                <div>
-                    <!-- Box Border -->
-                    <div class="border-1 border-gray bs-light-hover slow">
-                        <!-- Box Top -->
-                        <div class="bg-gray1 xs-py">
-                            <h4 class="extrabold no-pm">Basic</h4>
-                            <!-- <h5 class="light no-pm">Element Subtitle</h6> -->
-                            <!-- Price -->
-                            <h3>$<span class="text-lg2 extrabold">19.99</span></h3>
-                            <p class="uppercase">Per month per user / USD</p>
-                        </div>
-                        <!-- List -->
-                        <ul class="basic-list list-lg xs-my">
-                            <li>'No Contract' Pay As You GO </li>
-                            <li>Unlimited LTE Network data</li>
-                            <li>ELD Compliance</li>
-                            <li>DVIR/PTI (Vehicle Inspection)</li>
-                            <li>Over the air firmware updates</li>
-                            <li>Automatic updates on driver ELD’s application</li>
-                            
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                        </ul>
-                        <!-- Button -->
-                        <div class="xs-my">
-                            <!-- Button -->
-                            <a href="#" class="xl-btn font-11 uppercase bold white bg-colored bg-colored2-hover radius-lg slow">Select This Plan</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Box -->
-                <div>
-                    <!-- Box Border -->
-                    <div class="border-1 border-gray bs-light-hover slow">
-                        <!-- Box Top -->
-                        <div class="bg-gray1 xs-py">
-                            <h4 class="extrabold no-pm">Pro</h4>
-                            <!-- <h5 class="light no-pm">Element Subtitle</h6> -->
-                            <!-- Price -->
-                            <h3>$<span class="text-lg2 extrabold">29.99</span></h3>
-                            <p class="uppercase">Per month per user / USD</p>
-                        </div>
-                        <!-- List -->
-                        <ul class="basic-list list-lg xs-my">
-                            <li>'No Contract' Pay As You GO </li>
-                            <li>Unlimited LTE Network data</li>
-                            <li>ELD Compliance</li>
-                            <li>DVIR/PTI (Vehicle Inspection)</li>
-                            <li>Over the air firmware updates</li>
-                            <li>Automatic updates on driver ELD’s application</li>
-                            <li>Live GPS Tracking</li>
-                            <li>Two-way messages</li>
-                            <li>Customized alerts & notifications</li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                            <li> - </li>
-                        </ul>
-                        <!-- Button -->
-                        <div class="xs-my">
-                            <!-- Button -->
-                            <a href="#" class="xl-btn font-11 uppercase bold white bg-colored bg-colored2-hover radius-lg slow">Select This Plan</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Box -->
-                <div>
-                    <!-- Box Border -->
-                    <div class="border-1 border-gray bs-light-hover slow relative">
-                        <!-- Mark -->
-                        <div class="basic-mark bold uppercase font-10 radius bg-black white">
-                            Most Popular
-                        </div>
-                        <!-- Box Top -->
-                        <div class="bg-colored white xs-py">
-                            <h4 class="extrabold no-pm">Pro Plus</h4>
-                            <!-- <h5 class="light no-pm">Element Subtitle</h6> -->
-                            <!-- Price -->
-                            <h3>$<span class="text-lg2 extrabold">39.99</span></h3>
-                            <p class="uppercase">Per month per user / USD</p>
-                        </div>
-                        <!-- List -->
-                        <ul class="basic-list list-lg xs-my">
-                            <li>'No Contract' Pay As You GO </li>
-                            <li>Unlimited LTE Network Data</li>
-                            <li>ELD Compliance</li>
-                            <li>DVIR/PTI (Vehicle Inspection)</li>
-                            <li>Over the air firmware updates</li>
-                            <li>Automatic updates on driver ELD’s application</li>
-                            <li>Live GPS Tracking</li>
-                            <li>Two-way messages</li>
-                            <li>Customised alerts & notifications</li>
-                            <li>IFTA Fuel Tax reporting (state-wise mileage)</li>
-                            <li>Vehicle Diagnostics/Engine Fault codes</li>
-                            <li>Navigation Map</li>
-                            <li>Driver on-road behaviour monitoring/Reporting</li>
-                            <li>Driver Score Card</li>
-                            <li>Vehicle Route history</li>
-                        </ul>
-                        <!-- Button -->
-                        <div class="xs-my">
-                            <!-- Button -->
-                            <a href="#" class="xl-btn font-11 uppercase bold white bg-colored bg-colored2-hover radius-lg slow">Select This Plan</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        <!-- Plans Tables : End -->
-        
-
-
-        <!-- Device Prices : Start -->
-        <div class="containe t-center mt">
-            <h2 class="title">The Hardware Cost Makes TXT ELD</h2>
-            <h3 class="title">The Most  Affordable Option For Fleet Management Solution</h3>
-        </div>
-        <!-- Title Stripes -->
-        
-
-        <div id="device_prices" class="boxes container t-center clearfix sm-mt">
-                <div class="row clearfix">
-                    <!-- Box -->
-                    <div class="dotted-boxs col-md-6 col-lg-3 col-sm-6 col-12 xs-mt-mobile">
-                        <div class="row t-center">
-                            <!-- Icon -->
-                            <!-- <div class="col-4 t-right gray3 xxs-mt">
-                                <i class="fa fa-superpowers fa-4x"></i>
-                            </div> -->
-                            <div class="boxs col-12 stay xl-btn click-effect dark-effect block border-btn border-gray4 border-dashed bs-lg-hover radius slow ">
-                                <h5 class="gray6 extrabold">TELEMATICS TERMINAL</h5>
-                                <div class="fact" data-source="110000">
-                                    <div><h2 class="gray7 playfair">$299</h2></div>
+                <!-- Title Stripes -->
+                
+                <!-- Row for cols -->
+                <div class="row">
+                    <!-- Container to rotate box -->
+                    <div id="gal-01" class="col-sm-6 col-12" ontouchstart="this.classList.toggle('hover');">
+                        <div class="rotate-box">
+                            <!-- Front Face -->
+                            <div class="front">
+                                <div class="box-details">
+                                    <h4 class="bold-subtitle antonio">Real-time telematics with GPS</h4>
+                                    <h5>Helps in vehicle tracking & generate electronic records <br>on Hours of service (HOS).</h5>
+                                </div>
+                            </div>
+                            <!-- Back Face -->
+                            <div class="back bg-colored2">
+                                <div class="box-details">
+                                    <p></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Box -->
-                    <div class="dotted-boxs col-md-6 col-lg-3 col-sm-6 col-12 xs-mt-mobile">
-                        <div class="row t-center">
-                            <!-- Icon -->
-                            <!-- <div class="col-4 t-right gray3 xxs-mt">
-                                <i class="fa fa-ravelry fa-4x"></i>
-                            </div> -->
-                            <div class="boxs col-12 stay xl-btn click-effect dark-effect block border-btn border-gray4 border-dashed bs-lg-hover radius slow ">
-                                <h5 class="gray6 extrabold">MOBILE DATA TERMINAL STAND </h5>
-                                <div class="fact" data-source="2200">
-                                    <div><h2 class="gray7 playfair">$40</h2></div>
+                    <!-- End box -->
+                    <!-- Container to rotate box -->
+                    <div id="gal-02" class="col-sm-6 col-12" ontouchstart="this.classList.toggle('hover');">
+                        <div class="rotate-box">
+                            <!-- Front Face -->
+                            <div class="front">
+                                <div class="box-details">
+                                    <h4 class="bold-subtitle antonio">Route analyzer</h4>
+                                    <h5>Helps better on-road planning for the dispatches and <br>enhance vehicle utilization to its fullest.</h5>
+                                </div>
+                            </div>
+                            <!-- Back Face -->
+                            <div class="back bg-colored2">
+                                <div class="box-details">
+                                    <p></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Box -->
-                    <div class="dotted-boxs col-md-6 col-lg-3 col-sm-6 col-12 xs-mt-mobile">
-                        <div class="row t-center">
-                            <!-- Icon -->
-                            <!-- <div class="col-4 t-right gray3 xxs-mt">
-                                <i class="fa fa-thermometer-4 fa-4x"></i>
-                            </div> -->
-                            <div class="boxs col-12 stay xl-btn click-effect dark-effect block border-btn border-gray4 border-dashed bs-lg-hover radius slow ">
-                                <h5 class="gray6 extrabold">DATA TERMINAL COVER</h5>
-                                <div class="fact" data-source="3000">
-                                    <div><h2 class="gray7 playfair">$30</h2></div>
+                    <!-- End box -->
+                    <!-- Container to rotate box -->
+                    <div id="gal-03" class="col-sm-6 col-12" ontouchstart="this.classList.toggle('hover');">
+                        <div class="rotate-box">
+                            <!-- Front Face -->
+                            <div class="front">
+                                <div class="box-details">
+                                    <h4 class="bold-subtitle antonio">Compliant</h4>
+                                    <h5>FMCSA listed TXT ELD, so compliance.</h5>
+                                </div>
+                            </div>
+                            <!-- Back Face -->
+                            <div class="back bg-colored2">
+                                <div class="box-details">
+                                    <p></p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- End box -->
+                    <!-- Container to rotate box -->
+                    <div id="gal-04" class="col-sm-6 col-12" ontouchstart="this.classList.toggle('hover');">
+                        <div class="rotate-box">
+                            <!-- Front Face -->
+                            <div class="front">
+                                <div class="box-details">
+                                    <h4 class="bold-subtitle antonio">DVIR </h4>
+                                    <h5>The vehicle inspection form is designed well and ensures regulatory compliance.</h5>
+                                </div>
+                            </div>
+                            <!-- Back Face -->
+                            <div class="back bg-colored2">
+                                <div class="box-details">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End box -->
+                    <!-- Container to rotate box -->
+                    <div id="gal-05" class="col-sm-6 col-12" ontouchstart="this.classList.toggle('hover');">
+                        <div class="rotate-box">
+                            <!-- Front Face -->
+                            <div class="front">
+                                <div class="box-details">
+                                    <h4 class="bold-subtitle antonio">Promote Safety </h4>
+                                    <h5>Helps your fleet with safety features to prevent accidents.</h5>
+                                </div>
+                            </div>
+                            <!-- Back Face -->
+                            <div class="back bg-colored2">
+                                <div class="box-details">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End box -->
+                    <!-- Container to rotate box -->
+                    <div id="gal-06" class="col-sm-6 col-12" ontouchstart="this.classList.toggle('hover');">
+                        <div class="rotate-box">
+                            <!-- Front Face -->
+                            <div class="front">
+                                <div class="box-details">
+                                    <h4 class="bold-subtitle antonio">Smart Dashcam</h4>
+                                    <h5>Internet-connected high definition Smart Dashcam helps to access remotely. </h5>
+                                </div>
+                            </div>
+                            <!-- Back Face -->
+                            <div class="back bg-colored2">
+                                <div class="box-details">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End box -->
+                    <!-- Container to rotate box -->
+                    <div id="gal-07" class="col-sm-6 col-12" ontouchstart="this.classList.toggle('hover');">
+                        <div class="rotate-box">
+                            <!-- Front Face -->
+                            <div class="front">
+                                <div class="box-details">
+                                    <h4 class="bold-subtitle antonio">Enhance fleet visibility</h4>
+                                    <h5>Helps in tracking the vehicles and ensure effective and fast dispatches.</h5>
+                                </div>
+                            </div>
+                            <!-- Back Face -->
+                            <div class="back bg-colored2">
+                                <div class="box-details">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End box -->
+                    <!-- Container to rotate box -->
+                    <div id="gal-08" class="col-sm-6 col-12" ontouchstart="this.classList.toggle('hover');">
+                        <div class="rotate-box">
+                            <!-- Front Face -->
+                            <div class="front">
+                                <div class="box-details">
+                                    <h4 class="bold-subtitle antonio">Monitor Driving Behavior</h4>
+                                    <h5>Monitor the driving behavior like and identify the coaching requirements <br> and generate scorecards for drivers.</h5>
+                                </div>
+                            </div>
+                            <!-- Back Face -->
+                            <div class="back bg-colored2">
+                                <div class="box-details">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End box -->
+                    <!-- Container to rotate box -->
+                    <div id="gal-09" class="col-sm-6 col-12" ontouchstart="this.classList.toggle('hover');">
+                        <div class="rotate-box">
+                            <!-- Front Face -->
+                            <div class="front">
+                                <div class="box-details">
+                                    <h4 class="bold-subtitle antonio">Automated IFTA reporting</h4>
+                                    <h5>Helps to maintain tracker on fuel purchases and tax calculations, eliminating <br>the administrative burden.</h5>
+                                </div>
+                            </div>
+                            <!-- Back Face -->
+                            <div class="back bg-colored2">
+                                <div class="box-details">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End box -->
                     
-                </div>
-
-                <div class="row clearfix">
-                    <!-- Box -->
-                    <div class="dotted-boxs col-md-6 col-lg-3 col-sm-6 col-12 xs-mt-mobile">
-                        <div class="row t-center">
-                            <!-- Icon -->
-                            <!-- <div class="col-4 t-right gray3 xxs-mt">
-                                <i class="fa fa-shower fa-4x"></i>
-                            </div> -->
-                            <div class="boxs col-12 stay xl-btn click-effect dark-effect block border-btn border-gray4 border-dashed bs-lg-hover radius slow ">
-                                <h5 class="gray6 extrabold">DASH CAM CAMERA </h5>
-                                <div class="fact" data-source="14000">
-                                    <div><h2 class="gray7 playfair">$90</h2></div>
+                    <!-- Container to rotate box -->
+                    <div id="gal-10" class="col-sm-6 col-12" ontouchstart="this.classList.toggle('hover');">
+                        <div class="rotate-box">
+                            <!-- Front Face -->
+                            <div class="front">
+                                <div class="box-details">
+                                    <h4 class="bold-subtitle antonio">Preventive Maintenance</h4>
+                                    <h5>Alerts on vehicle health generates a diagnostic report which helps <br>fleet managers to plan maintenance accordingly and reduce downtime. </h5>
+                                </div>
+                            </div>
+                            <!-- Back Face -->
+                            <div class="back bg-colored2">
+                                <div class="box-details">
+                                    <p></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Box -->
-                    <div class="dotted-boxs col-md-6 col-lg-3 col-sm-6 col-12 xs-mt-mobile">
-                        <div class="row">
-                            <!-- Icon -->
-                            <!-- <div class="col-4 t-right gray3 xxs-mt">
-                                <i class="fa fa-shower fa-4x"></i>
-                            </div> -->
-                            <div class="boxs col-12 stay xl-btn click-effect dark-effect block border-btn border-gray4 border-dashed bs-lg-hover radius slow ">
-                                <h5 class="gray6 extrabold">TERMINAL CONNECTING WIRE</h5>
-                                <div class="fact" data-source="14000">
-                                    <div><h2 class="gray7 playfair">$75</h2></div>
-                                </div>
-                            </div>
+                    <!-- End box -->
+                </div>
+                <!-- End Row for cols -->
+            </div>
+            <!-- End Container -->
+        </section>
+        <!-- Section to boxes : End -->
+
+        <section id="intro_section_2" class="t-center sm-mb" style="background-color: #fff">
+            <div class="container">
+                <!-- Title -->
+                <h1 class="bold-title">
+                    <span class="light">Key Solutions</span>
+                </h2>
+                <h3 class="title xxs-mt xs-mt font-16">TXT ELD contributes to five critical fleet management areas to the transportation industry.  We help the fleet owners to ensure their fleet operates in full potential through appropriate intersection of regulations and technology.</h3>
+                <h3 class="title xxs-mt xs-mt font-16">We focus on providing solutions on Safety, Compliance, Telematics, Efficiency, Asset (S-C-E-T-A) for each of our clients so that they can achieve their daily operations smoothly. We customize the solutions for the fleet companies as per the requirement to create value for every trail of their mobility system.</h3>                
+            </div>
+            <!-- Container for cols -->
+            <div class="container clearfix sm-mt faq-block">
+            <!-- Row for cols -->
+            <div class="row no-mx">
+    
+                <!-- Col -->
+                <div class="col- col-12">
+                    <div id="js-filters-faq" class="cbp-l-filters-button custom-texts bold uppercase font-11 dark" style="width: 534px;margin: 0 auto;">
+                        <div data-filter="*" class="cbp-filter-item">
+                            Safety
+                        </div>
+                        <div data-filter=".hos" class="cbp-filter-item">
+                            Compliance
+                        </div>
+                        <div data-filter=".eld" class="cbp-filter-item">
+                            Efficiency
+                        </div>
+                        <div data-filter=".ifta" class="cbp-filter-item">
+                            Telematics
+                        </div>
+                        <div data-filter=".buy" class="cbp-filter-item">
+                            Asset
                         </div>
                     </div>
-                    </div>
                 </div>
-
-
-        <!-- Device Prices : End -->
-
-        <div class="bg-gray2 gray xxs-pt my xs-py">
-            <p class="description t-center font-18"><span class="t-color-red1">The complete telematics will be $349 WITH 1 YEAR OF WARRANTY**</span> <br>
-                ** WARRANTY DOES NOT COVER WATER/ PHYSICAL DAMAGE</p>
+                <!-- End Col -->
+            </div>
+            <!-- End Row for cols -->
         </div>
-
-        <div class="container xs-my t-center">
-            <p class="description">*All prices are in USD. <br>
-            All the bundles come with a fully embedded computer mobile data terminal hardware.</p>
-            <p class="description mb">Feel free to get in touch with us, our sales representative will carve customized solution for you.</p>
-
-        </div>
-
+        <!-- End Container for cols -->
+        </section>
+        <!-- intro_section_2 -->
        
         <!-- FOOTER -->
         <footer id="footer" class="classic_footer">
@@ -517,9 +549,6 @@
                 </div>
             </footer>
             <!-- END FOOTER -->
-
-
-
 
 
         <!-- Quick Contact Form -->
