@@ -1611,9 +1611,7 @@ $(document).ready(function(){
     //     $(this).hide(); 
     //     startFadeOne();
     // });
-
-    setTimeout(function(){
-        fadeOne.fadeIn();
+    function addSlic() {
         $('.fadin-1').slick({
             dots: false,
             infinite: true,
@@ -1625,15 +1623,24 @@ $(document).ready(function(){
             prevArrow: false,
             nextArrow: false
           });
-          startFadeOne();
+    }
+
+    setTimeout(function(){
+        fadeOne.fadeIn();
+            addSlic()
+            startFadeOne();
     }, 5000);
 
     function startFadeOne() {
-        setInterval(function(){
+        let sst = setInterval(function(){
            if(fadeOne.is(':visible')) {
                 fadeOne.fadeOut(300);
+                fadeOne.slick('unslick');
+                clearInterval(sst);
                 setTimeout(function(){
                     fadeOne.fadeIn(300);
+                    addSlic();
+                    startFadeOne();
                 }, 8000);
                 // fadeOne.delay(5000).show();
             } 
