@@ -92,6 +92,9 @@ p.description,
     color: #333 !important;
     line-height: 1.7;
 }
+.gray-6 {
+    color: #999 !important;
+}
 .selet-list {
     width: 100%;
     padding: 10px;
@@ -188,7 +191,6 @@ p, .divice-capability li {
     border-left: 5px solid #ff0019;
     width: 470px;
     height: 120px;
-    position: absolute;
     display: block;
     padding-top: 30px;
     padding-left: 20px;
@@ -199,29 +201,15 @@ p, .divice-capability li {
 
 @keyframes flickerAnimation {
     0%   { opacity:1; }
-    50%  { opacity:0; }
-    100% { opacity:1; }
+    100%  { opacity:0; }
   }
-  @-o-keyframes flickerAnimation{
-    0%   { opacity:1; }
-    50%  { opacity:0; }
-    100% { opacity:1; }
-  }
-  @-moz-keyframes flickerAnimation{
-    0%   { opacity:1; }
-    50%  { opacity:0; }
-    100% { opacity:1; }
-  }
-  @-webkit-keyframes flickerAnimation{
-    0%   { opacity:1; }
-    50%  { opacity:0; }
-    100% { opacity:1; }
-  }
+ 
 .animate-flicker {
-    -webkit-animation: flickerAnimation 15s infinite;
-    -moz-animation: flickerAnimation 15s infinite;
-    -o-animation: flickerAnimation 15s infinite;
-    animation: flickerAnimation 15s infinite;
+    -webkit-animation: flickerAnimation 60s infinite;
+    -moz-animation: flickerAnimation 60s infinite;
+    -o-animation: flickerAnimation 60s infinite;
+    animation: flickerAnimation 60s infinite;
+    animation-delay: 60s;
 }
 
 /* Logo */
@@ -240,6 +228,7 @@ p, .divice-capability li {
     background-color: rgb(255, 255, 255);
 }
 
+/* contact */
 #contact h1, #contact p {
     color: #d8d8d8;
 }
@@ -252,6 +241,17 @@ p, .divice-capability li {
 #contact.top-text h6 {
     padding-bottom: 30px;
 }
+::placeholder { 
+    color: #999;
+    opacity: 1; 
+}
+:-ms-input-placeholder { 
+    color: #999;
+}
+::-ms-input-placeholder { 
+    color: #999;
+}
+/* contact */
 
 #slider_home_page {
     background: -moz-linear-gradient(top,  rgba(0,0,0,0.5) 0%, rgba(6,8,11,0.5) 1%, rgba(125,185,232,0) 22%);
@@ -419,6 +419,10 @@ h6.sub-text {
 .red-bg-circle-icon .border-colored1, .red-bg-circle-icon .border-colored1-hover:hover, .bgcolor-md-red {
     border-color: #ff0019 !important;
     background-color: #ff0019 !important;
+}
+
+.circle-dots.dark-dots>.slick-dots li button {
+    background-color: #dedcdc;
 }
 
 .feature-box-row {
@@ -723,4 +727,7 @@ h6.sub-text {
     border: 5px solid gray;
     font-size: 18px;
     padding: 15px;
+}
+#footer.classic_footer .footer-body {
+    padding-bottom: 20px !important;
 }

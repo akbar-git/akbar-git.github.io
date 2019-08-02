@@ -1387,6 +1387,17 @@ $(window).on('load', function() {
         };
         $('.calculate-height').calculateHeight();
 
+        $.fn.calculateHeight = function () {
+            $('.calculate-height-520').each(function() {
+                var maxHeight = '520px';
+               $(this).find('>*').css({'height': 'auto'}).each(function() {
+                   if ($(this).outerHeight() > maxHeight) { maxHeight = $(this).outerHeight();}
+               });
+               $(this).find('>*').outerHeight(maxHeight);
+           });
+       };
+       $('.calculate-height-520').calculateHeight();
+
     //Sticky Items
         if ($(".sticky-item").exists()) {
             $(".sticky-item").each(function(){
@@ -1588,6 +1599,57 @@ $(window).on('load', function() {
          }
 
 $(document).ready(function(){
+    // $("#video_on_text").hide().delay(1000).fadeIn(function(){
+    //     setInterval(function(){
+    //        // $("#video_on_text").hide()
+    //     }, 20000); 
+    // });
+    const fadeOne = $("#video_on_text");
+    fadeOne.hide();
+
+    // fadeOne.delay(18000).queue(function(n) {
+    //     $(this).hide(); 
+    //     startFadeOne();
+    // });
+
+    setTimeout(function(){
+        fadeOne.fadeIn();
+        $('.fadin-1').slick({
+            dots: false,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            autoplay: true,
+            cssEase: 'linear',
+            arrows : false,
+            prevArrow: false,
+            nextArrow: false
+          });
+          startFadeOne();
+    }, 5000);
+
+    function startFadeOne() {
+        setInterval(function(){
+           if(fadeOne.is(':visible')) {
+                fadeOne.fadeOut(300);
+                setTimeout(function(){
+                    fadeOne.fadeIn(300);
+                }, 8000);
+                // fadeOne.delay(5000).show();
+            } 
+        }, 18000);
+    }
+
+    function fadin1Interval() {
+        setInterval(function(){
+            if(fadeOne.is(':visible')) {
+                fadeOne.fadeOut(300);
+            } else {
+                fadeOne.fadeIn(300);
+            }
+        }, 15000);
+    }
+
     $('.fadin').slick({
         dots: false,
         infinite: true,
@@ -1599,6 +1661,7 @@ $(document).ready(function(){
         prevArrow: false,
         nextArrow: false
       });
+      
 });
 
 
