@@ -48,6 +48,9 @@ body {
 /* Full Screen Video : End */
 
 /* COMMON CHANGES : START */
+.not-visible {
+    visibility: hidden;
+}
 p, li {
     letter-spacing: 0.2px;
 }
@@ -348,6 +351,15 @@ h2.title-thin {
     text-transform: unset !important;
     font-size: 56px;
 }
+h2.title-1 {
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    color: #999999;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: unset !important;
+    font-weight: 400;
+}
 h3.title {
     padding: 0;
     margin: 0;
@@ -357,7 +369,15 @@ h3.title {
     font-weight: 400;
     text-transform: unset !important;
 }
-
+h3.title-1 {
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+    color: #999999;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: unset !important;
+}
 h4.title {
     padding: 0;
     margin: 0;
@@ -367,7 +387,6 @@ h4.title {
     font-weight: 400;
     text-transform: unset !important;
 }
-
 h5.title {
     padding: 0;
     margin: 0;
@@ -484,6 +503,10 @@ h6.sub-text {
 /* PRICING : START */
 #device_prices h2 {
     display: inline-block;
+}
+#device_prices .dotted-boxs {
+    max-width: 23% !important;
+    margin: 7px !important;
 }
 #device_prices .dotted-boxs .boxs {
     padding-left: 0 !important;
