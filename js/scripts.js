@@ -1615,13 +1615,14 @@ $(document).ready(function(){
         $('.fadin-1').slick({
             dots: false,
             infinite: true,
-            speed: 500,
+            speed: 1000,
             fade: true,
             autoplay: true,
             cssEase: 'linear',
             arrows : false,
             prevArrow: false,
-            nextArrow: false
+            nextArrow: false,
+            autoplaySpeed: 5000,
           });
     }
 
@@ -1634,7 +1635,7 @@ $(document).ready(function(){
     function startFadeOne() {
         let sst = setInterval(function(){
            if(fadeOne.is(':visible')) {
-                fadeOne.fadeOut(300);
+                fadeOne.fadeOut(1500);
                 fadeOne.slick('unslick');
                 clearInterval(sst);
                 setTimeout(function(){
@@ -1644,13 +1645,13 @@ $(document).ready(function(){
                 }, 8000);
                 // fadeOne.delay(5000).show();
             } 
-        }, 18000);
+        }, 35000);
     }
 
     function fadin1Interval() {
         setInterval(function(){
             if(fadeOne.is(':visible')) {
-                fadeOne.fadeOut(300);
+                fadeOne.fadeOut(1500);
             } else {
                 fadeOne.fadeIn(300);
             }
