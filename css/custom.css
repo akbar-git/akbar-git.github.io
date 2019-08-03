@@ -179,6 +179,95 @@ p, .divice-capability li {
 }
 /* COMMON CHANGES : END */
 
+/* RIBBON : START */
+
+.ribbon-container {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    overflow: visible;
+    /* so we can see the pseudo-elements we're going to add to the anchor */
+    
+    font-size: 18px;
+    /* font-size and line-height must be equal so we can account for the height of the banner */
+    
+    line-height: 18px;
+  }
+  
+  /*.ribbon-container:before {
+     content: "";
+    height: 0;
+    width: 0;
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    border-top: 16px solid rgba(0, 0, 0, .3); 
+    These 4 border properties create the first part of our drop-shadow
+    
+    border-bottom: 29px solid rgba(0, 0, 0, .3);
+    border-right: 29px solid rgba(0, 0, 0, .3);
+    border-left: 29px solid transparent;
+  } */
+  
+  /* .ribbon-container:after {
+    This adds the second part of our dropshadow
+    
+    content: "";
+    height: 3px;
+    background: rgba(0, 0, 0, .3);
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 58px;
+    right: 3px;
+  }*/
+  
+  .ribbon-container a {
+    display: block;
+    padding: 6px 13px 13px 13px;
+    position: relative;
+    /* allows us to position our pseudo-elements properly */
+    background: #f00404;
+    overflow: visible;
+    height: 29px;
+    margin-left: 29px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .ribbon-container a:after {
+    /* this creates the "folded" part of our ribbon */
+    
+    content: "";
+    height: 0;
+    width: 0;
+    display: block;
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+    border-top: 15px solid #b10101;
+    border-right: 15px solid transparent;
+  }
+  
+  .ribbon-container a:before {
+    /* this creates the "forked" part of our ribbon */
+    
+    content: "";
+    height: 0;
+    width: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -15px;
+    border-top: 15px solid #f00404;
+    border-bottom: 14px solid #f00404;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+  }
+
+/* RIBBON : END */
+
 /* HOME PAGE : START */
 #home_slider .tparrows {
     display: none !important;
