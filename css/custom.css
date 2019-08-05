@@ -48,6 +48,9 @@ body {
 /* Full Screen Video : End */
 
 /* COMMON CHANGES : START */
+.color-777 {
+    color: #777 !important;
+}
 .not-visible {
     visibility: hidden;
 }
