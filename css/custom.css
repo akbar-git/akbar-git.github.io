@@ -757,6 +757,12 @@ h6.sub-text {
 /* PARTNER : END */
 
 /* FAQ : START */
+.faq-block .cbp-caption-expand .cbp-caption-defaultWrap {
+    padding-left: 0 !important;
+}
+.faq-block .cbp-caption-expand .cbp-caption-defaultWrap i {
+    margin-right: 5px;
+}
 .faq-block .cbp-l-caption-body a {
     text-decoration: underline;
 }
